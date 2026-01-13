@@ -236,16 +236,26 @@ class SimpleXHSCrawler:
                 self.logger.debug("内容太少或为空")
                 return False
             
-            # 检查是否有标题
-            if not note.get('title'):
-                self.logger.debug("没有标题")
+            # 主题过滤 - 确保是"外卖/点餐翻车"相关
+            title = note.get('title', '').lower()
+            content_lower = content.lower()
+            
+            # 检查是否包含主题关键词
+            theme_keywords = ['外卖', '点餐', '翻车', '吃啥', '漫画', '送餐', '饿了么', '美团']
+            
+            has_theme = any(keyword in title or keyword in content_lower 
+                        for keyword in theme_keywords)
+            
+            if not has_theme:
+                self.logger.debug(f"笔记不符合主题: {title[:30]}...")
+                return False
             
             return True
             
         except Exception as e:
             self.logger.debug(f"验证笔记时出错: {e}")
             return False
-    
+        
     def process_to_comic(self, note: Dict[str, Any]) -> Dict[str, Any]:
         """将笔记处理为连环画格式"""
         try:
@@ -361,25 +371,34 @@ class SimpleXHSCrawler:
     def update_global_annotations(self, new_annotations: Dict[str, Any]):
         """更新全局标注文件"""
         try:
+            from config.settings import COMICS_DIR
             global_annotations_path = COMICS_DIR / 'annotations.json'
             
-            # 读取现有标注
-            existing_annotations = {}
+            # 初始化或读取现有标注
+            all_annotations = {}
+            
             if global_annotations_path.exists():
-                with open(global_annotations_path, 'r', encoding='utf-8') as f:
-                    existing_annotations = json.load(f)
+                try:
+                    # 尝试读取文件
+                    with open(global_annotations_path, 'r', encoding='utf-8') as f:
+                        content = f.read().strip()
+                        if content:  # 确保文件不为空
+                            all_annotations = json.loads(content)
+                except (json.JSONDecodeError, Exception) as e:
+                    self.logger.warning(f"全局标注文件损坏，重新创建: {e}")
+                    all_annotations = {}
             
             # 合并新标注
-            existing_annotations.update(new_annotations)
+            all_annotations.update(new_annotations)
             
             # 保存
             with open(global_annotations_path, 'w', encoding='utf-8') as f:
-                json.dump(existing_annotations, f, ensure_ascii=False, indent=2)
+                json.dump(all_annotations, f, ensure_ascii=False, indent=2)
                 
             self.logger.info(f"全局标注文件更新成功: {global_annotations_path}")
             
         except Exception as e:
-            self.logger.error(f"更新全局标注文件失败: {e}")
+            self.logger.error(f"更新全局标注文件失败: {e}")  
     
     def generate_report(self) -> Dict[str, Any]:
         """生成爬取报告"""

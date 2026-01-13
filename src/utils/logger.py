@@ -18,14 +18,6 @@ def setup_logger(
 ) -> logging.Logger:
     """
     设置并返回logger实例
-    
-    Args:
-        name: logger名称
-        log_level: 日志级别，如果为None则使用配置中的级别
-        log_file: 日志文件路径，如果为None则使用配置中的路径
-        
-    Returns:
-        logging.Logger实例
     """
     # 创建logger
     logger = logging.getLogger(name)
@@ -38,19 +30,33 @@ def setup_logger(
     if logger.handlers:
         return logger
     
-    # 创建控制台handler
+    # 创建控制台handler - 修复Windows控制台编码问题
     console_handler = logging.StreamHandler()
     console_handler.setLevel(getattr(logging, level.upper()))
     
+    # 修复Windows控制台编码问题
+    try:
+        # 尝试使用UTF-8编码
+        import sys
+        if sys.platform == "win32":
+            import io
+            console_handler.stream = io.TextIOWrapper(
+                console_handler.stream.buffer, 
+                encoding='utf-8', 
+                errors='replace'
+            )
+    except:
+        pass
+    
     # 创建文件handler
     log_file = log_file or LOG_CONFIG["file_path"]
-    # 确保日志目录存在
     log_file.parent.mkdir(parents=True, exist_ok=True)
     
     file_handler = logging.handlers.RotatingFileHandler(
         filename=log_file,
         maxBytes=LOG_CONFIG["max_file_size"],
-        backupCount=LOG_CONFIG["backup_count"]
+        backupCount=LOG_CONFIG["backup_count"],
+        encoding='utf-8'  # 确保文件使用UTF-8编码
     )
     file_handler.setLevel(getattr(logging, level.upper()))
     

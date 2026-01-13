@@ -38,10 +38,6 @@ def check_dependencies():
 def run_simple_crawler(max_comics: int = 3, headless: bool = False):
     """
     运行简化版爬虫
-    
-    Args:
-        max_comics: 最大收集数量
-        headless: 是否无头模式（False显示浏览器界面，方便调试）
     """
     logger = setup_logger()
     logger.info("开始执行简化版爬虫任务")
@@ -54,21 +50,25 @@ def run_simple_crawler(max_comics: int = 3, headless: bool = False):
         report = crawler.crawl()
         
         # 保存报告
-        crawler.save_report(report)
-        
-        # 关闭爬虫
-        crawler.close()
-        
-        logger.info(f"爬虫任务完成，收集到 {report['stats']['total_collected']} 个连环画")
-        
-        return report
+        if report:
+            crawler.save_report(report)
+            
+            # 关闭爬虫
+            crawler.close()
+            
+            logger.info(f"爬虫任务完成，收集到 {report['stats']['total_collected']} 个连环画")
+            
+            return report
+        else:
+            logger.error("爬虫返回了空报告")
+            crawler.close()
+            return None
         
     except Exception as e:
         logger.error(f"爬虫任务失败: {str(e)}")
         import traceback
         traceback.print_exc()
         return None
-
 
 def main():
     """主函数"""
@@ -141,7 +141,7 @@ def main():
             if report['collected_comics']:
                 print("\n收集的连环画:")
                 for comic in report['collected_comics']:
-                    print(f"  - {comic['title']} ({comic['images_count']}张图片)")
+                    print(f"  - {comic['title']} ({comic.get('image_count', 0)}张图片)")
             else:
                 print("\n未收集到任何连环画，可能的原因:")
                 print("1. 小红书页面结构变化")
