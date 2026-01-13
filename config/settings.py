@@ -102,3 +102,13 @@ def create_directories():
 # 运行创建目录
 if __name__ == "__main__":
     create_directories()
+
+# 反爬虫设置
+ANTI_CRAWL_SETTINGS = {
+    "max_retries_per_page": 3,  # 每个页面最大重试次数
+    "retry_delay": 5,  # 重试延迟（秒）
+    "human_behavior_delay": [0.5, 2],  # 人类行为延迟范围（秒）
+    "page_load_timeout": 30,  # 页面加载超时时间
+    "randomize_requests": True,  # 是否随机化请求
+    "use_proxies": False,  # 是否使用代理
+}

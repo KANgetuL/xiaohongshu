@@ -564,3 +564,49 @@
 2026-01-13 15:45:21,213 - xhs_crawler - INFO - 处理笔记: 67307468000000001b02b41e
 2026-01-13 15:45:38,544 - xhs_parser - INFO - 解析到笔记: ID=67307468000000001b02b41e, 标题长度=5, 图片数=20
 2026-01-13 15:45:38,545 - xhs_crawler - INFO - 处理笔记: 68707431000000002400c1e3
+2026-01-13 15:59:42,233 - xhs_crawler - INFO - 项目初始化完成
+2026-01-13 15:59:48,775 - xhs_crawler - INFO - 开始执行简化版爬虫任务
+2026-01-13 15:59:48,775 - xhs_crawler - INFO - 开始爬取流程
+2026-01-13 15:59:53,852 - xhs_crawler - INFO - 所有组件初始化成功
+2026-01-13 15:59:53,853 - xhs_crawler - INFO - 开始登录小红书...
+2026-01-13 16:00:04,012 - xhs_crawler - INFO - ✅ 登录成功
+2026-01-13 16:00:04,013 - xhs_crawler - INFO - 搜索关键词: ['外卖翻车', '点餐翻车', '外卖漫画', '点餐漫画']
+2026-01-13 16:00:04,013 - xhs_crawler - INFO - 处理关键词: 外卖翻车
+2026-01-13 16:00:04,013 - xhs_crawler - INFO - 搜索关键词 '外卖翻车' (尝试 1/3)
+2026-01-13 16:00:04,013 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E5%A4%96%E5%8D%96%E7%BF%BB%E8%BD%A6
+2026-01-13 16:00:14,653 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_外卖翻车_1768291214.html
+2026-01-13 16:00:14,701 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-13 16:00:14,701 - xhs_parser - ERROR - 解析搜索结果失败: 'XHSParser' object has no attribute '_extract_note_from_element'
+2026-01-13 16:00:14,702 - xhs_crawler - INFO - 解析到 0 个笔记
+2026-01-13 16:00:14,703 - xhs_crawler - WARNING - 未找到关键词'外卖翻车'的笔记
+2026-01-13 16:00:14,703 - xhs_crawler - INFO - 处理关键词: 点餐翻车
+2026-01-13 16:00:14,703 - xhs_crawler - INFO - 搜索关键词 '点餐翻车' (尝试 1/3)
+2026-01-13 16:00:14,703 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E7%82%B9%E9%A4%90%E7%BF%BB%E8%BD%A6
+2026-01-13 16:00:24,678 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_点餐翻车_1768291224.html
+2026-01-13 16:00:24,729 - xhs_parser - INFO - 总共找到 50 个候选元素
+2026-01-13 16:00:24,730 - xhs_parser - ERROR - 解析搜索结果失败: 'XHSParser' object has no attribute '_extract_note_from_element'
+2026-01-13 16:00:24,731 - xhs_crawler - INFO - 解析到 0 个笔记
+2026-01-13 16:00:24,731 - xhs_crawler - WARNING - 未找到关键词'点餐翻车'的笔记
+2026-01-13 16:00:24,731 - xhs_crawler - INFO - 处理关键词: 外卖漫画
+2026-01-13 16:00:24,731 - xhs_crawler - INFO - 搜索关键词 '外卖漫画' (尝试 1/3)
+2026-01-13 16:00:24,732 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E5%A4%96%E5%8D%96%E6%BC%AB%E7%94%BB
+2026-01-13 16:00:34,540 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_外卖漫画_1768291234.html
+2026-01-13 16:00:34,593 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-13 16:00:34,593 - xhs_parser - ERROR - 解析搜索结果失败: 'XHSParser' object has no attribute '_extract_note_from_element'
+2026-01-13 16:00:34,595 - xhs_crawler - INFO - 解析到 0 个笔记
+2026-01-13 16:00:34,595 - xhs_crawler - WARNING - 未找到关键词'外卖漫画'的笔记
+2026-01-13 16:00:34,595 - xhs_crawler - INFO - 处理关键词: 点餐漫画
+2026-01-13 16:00:34,596 - xhs_crawler - INFO - 搜索关键词 '点餐漫画' (尝试 1/3)
+2026-01-13 16:00:34,596 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E7%82%B9%E9%A4%90%E6%BC%AB%E7%94%BB
+2026-01-13 16:00:44,923 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_点餐漫画_1768291244.html
+2026-01-13 16:00:44,999 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-13 16:00:44,999 - xhs_parser - ERROR - 解析搜索结果失败: 'XHSParser' object has no attribute '_extract_note_from_element'
+2026-01-13 16:00:45,001 - xhs_crawler - INFO - 解析到 0 个笔记
+2026-01-13 16:00:45,001 - xhs_crawler - WARNING - 未找到关键词'点餐漫画'的笔记
+2026-01-13 16:00:45,001 - xhs_crawler - INFO - 爬取完成，共收集 0 个连环画
+2026-01-13 16:00:47,365 - request_handler - INFO - 请求处理器已关闭
+2026-01-13 16:00:47,365 - xhs_crawler - INFO - 爬虫已关闭
+2026-01-13 16:00:47,366 - xhs_crawler - INFO - 报告已保存到: D:\1- VS file menu\xiaohongshu\data\processed\comics\crawl_report.json
+2026-01-13 16:01:07,635 - request_handler - INFO - 请求处理器已关闭
+2026-01-13 16:01:07,635 - xhs_crawler - INFO - 爬虫已关闭
+2026-01-13 16:01:07,635 - xhs_crawler - INFO - 爬虫任务完成，收集到 0 个连环画

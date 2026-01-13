@@ -296,34 +296,74 @@ class SeleniumHandler:
         except:
             return False
 
-    def get_page(self, url, wait_selector=None, timeout=10):
+    def get_page(self, url, wait_selector=None, timeout=10, max_retries=3):
         """
-        访问页面，并处理可能的登录弹窗
+        访问页面，并处理可能的登录弹窗和重定向
+        
+        Args:
+            url: 要访问的URL
+            wait_selector: 等待的选择器
+            timeout: 超时时间
+            max_retries: 最大重试次数
+        
+        Returns:
+            访问是否成功
         """
-        try:
-            logger.info(f"访问页面: {url}")
-            self.driver.get(url)
-            
-            # 等待页面加载
-            if wait_selector:
-                try:
-                    self.wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, wait_selector)))
-                except TimeoutException:
-                    logger.warning(f"等待元素超时: {wait_selector}")
-            else:
-                time.sleep(3)  # 默认等待3秒
-            
-            # 尝试关闭登录弹窗
-            self.close_login_popup()
-            
-            return True
-            
-        except TimeoutException:
-            logger.warning(f"页面加载超时: {url}")
-            return False
-        except Exception as e:
-            logger.error(f"访问页面时发生错误: {e}")
-            return False
+        for attempt in range(max_retries):
+            try:
+                logger.info(f"访问页面 (尝试 {attempt+1}/{max_retries}): {url}")
+                self.driver.get(url)
+                
+                # 等待页面加载
+                if wait_selector:
+                    try:
+                        WebDriverWait(self.driver, timeout).until(
+                            EC.presence_of_element_located((By.CSS_SELECTOR, wait_selector))
+                        )
+                    except TimeoutException:
+                        logger.warning(f"等待元素超时: {wait_selector}")
+                else:
+                    time.sleep(3)  # 默认等待3秒
+                
+                # 检查是否被重定向
+                if self.check_page_redirected():
+                    logger.warning(f"页面被重定向，尝试恢复 (尝试 {attempt+1}/{max_retries})")
+                    
+                    if attempt < max_retries - 1:
+                        # 处理重定向
+                        if self.handle_page_redirect(url):
+                            logger.info("成功恢复页面访问")
+                            continue
+                        else:
+                            logger.warning("恢复页面访问失败")
+                    else:
+                        logger.error(f"重试 {max_retries} 次后仍然失败")
+                        return False
+                
+                # 尝试关闭登录弹窗
+                self.close_login_popup()
+                
+                return True
+                
+            except TimeoutException:
+                logger.warning(f"页面加载超时: {url}")
+                if attempt < max_retries - 1:
+                    logger.info(f"重试加载页面 (尝试 {attempt+1}/{max_retries})")
+                    continue
+                else:
+                    logger.error(f"重试 {max_retries} 次后仍然超时")
+                    return False
+            except Exception as e:
+                logger.error(f"访问页面时发生错误: {e}")
+                if attempt < max_retries - 1:
+                    logger.info(f"重试访问页面 (尝试 {attempt+1}/{max_retries})")
+                    time.sleep(2)
+                    continue
+                else:
+                    logger.error(f"重试 {max_retries} 次后仍然失败")
+                    return False
+        
+        return False
     
     def close_login_popup(self):
         """
@@ -399,6 +439,174 @@ class SeleniumHandler:
         except Exception as e:
             logger.error(f"提取图片时出错: {e}")
             return []
+    def check_page_redirected(self):
+        """
+        检查页面是否被重定向（反爬措施）
+
+        Returns:
+            True如果被重定向，False如果正常
+        """
+        try:
+            current_url = self.driver.current_url
+            
+            # 检查是否是首页（被重定向）
+            if current_url == "https://www.xiaohongshu.com/" or "xiaohongshu.com/?redirect" in current_url:
+                logger.warning("页面被重定向到首页（反爬机制）")
+                return True
+            
+            # 检查页面内容是否有"页面不见了"等提示
+            page_text = self.driver.page_source
+            blocked_keywords = ["页面不见了", "访问的页面不存在", "访问异常", "您访问的页面"]
+            
+            for keyword in blocked_keywords:
+                if keyword in page_text:
+                    logger.warning(f"检测到页面异常：{keyword}")
+                    return True
+            
+            # 检查是否显示搜索结果
+            if "search_result" in current_url:
+                # 应该有搜索结果
+                if "feeds-container" not in self.driver.page_source:
+                    logger.warning("搜索结果页面没有内容")
+                    return True
+            
+            return False
+            
+        except Exception as e:
+            logger.error(f"检查页面重定向时出错: {e}")
+            return False
+
+    def handle_page_redirect(self, original_url=None):
+        """
+        处理页面重定向问题
+        
+        Args:
+            original_url: 原本要访问的URL
+        
+        Returns:
+            True如果恢复访问，False如果失败
+        """
+        try:
+            logger.warning("处理页面重定向...")
+            
+            # 1. 先刷新页面
+            self.driver.refresh()
+            time.sleep(3)
+            
+            # 2. 如果仍然被重定向，尝试重新登录
+            if self.check_page_redirected():
+                logger.info("页面仍然异常，尝试重新登录...")
+                
+                # 保存当前cookies
+                self.save_cookies()
+                
+                # 清除cookies重新登录
+                self.driver.delete_all_cookies()
+                time.sleep(2)
+                
+                # 重新访问小红书
+                self.driver.get("https://www.xiaohongshu.com")
+                time.sleep(3)
+                
+                # 重新登录
+                login_success = self.login_with_cookies()
+                
+                if login_success and original_url:
+                    # 重新访问原始URL
+                    logger.info(f"重新访问原始URL: {original_url}")
+                    return self.get_page(original_url, wait_selector=".feeds-container")
+                else:
+                    logger.error("重新登录失败")
+                    return False
+            
+            return True
+            
+        except Exception as e:
+            logger.error(f"处理页面重定向失败: {e}")
+            return False
+
+    def add_anti_detection_features(self):
+        """
+        添加反检测功能
+        """
+        try:
+            # 修改navigator.webdriver属性
+            self.driver.execute_script(
+                "Object.defineProperty(navigator, 'webdriver', {get: () => undefined})"
+            )
+            
+            # 修改chrome属性
+            self.driver.execute_script(
+                "window.chrome = {runtime: {}}"
+            )
+            
+            # 添加其他反检测脚本
+            scripts = [
+                # 修改plugins
+                """
+                Object.defineProperty(navigator, 'plugins', {
+                    get: () => [1, 2, 3, 4, 5]
+                })
+                """,
+                # 修改languages
+                """
+                Object.defineProperty(navigator, 'languages', {
+                    get: () => ['zh-CN', 'zh', 'en']
+                })
+                """,
+                # 隐藏自动化特征
+                """
+                const originalQuery = window.navigator.permissions.query;
+                window.navigator.permissions.query = (parameters) => (
+                    parameters.name === 'notifications' ?
+                        Promise.resolve({ state: Notification.permission }) :
+                        originalQuery(parameters)
+                );
+                """
+            ]
+            
+            for script in scripts:
+                try:
+                    self.driver.execute_script(script)
+                except:
+                    pass
+            
+            logger.info("反检测功能已添加")
+            
+        except Exception as e:
+            logger.error(f"添加反检测功能失败: {e}")
+
+    def add_human_like_behavior(self):
+        """
+        添加人类行为模拟
+        """
+        try:
+            # 随机移动鼠标
+            import random
+            width = self.driver.execute_script("return window.innerWidth")
+            height = self.driver.execute_script("return window.innerHeight")
+            
+            # 模拟鼠标移动
+            for _ in range(random.randint(2, 5)):
+                x = random.randint(0, width)
+                y = random.randint(0, height)
+                
+                action = webdriver.ActionChains(self.driver)
+                action.move_by_offset(x, y).perform()
+                time.sleep(random.uniform(0.1, 0.3))
+            
+            # 随机滚动
+            for _ in range(random.randint(1, 3)):
+                scroll_amount = random.randint(200, 800)
+                self.driver.execute_script(f"window.scrollBy(0, {scroll_amount});")
+                time.sleep(random.uniform(0.5, 1.5))
+            
+            logger.debug("人类行为模拟完成")
+            
+        except Exception as e:
+            logger.debug(f"人类行为模拟失败: {e}")
+
+
     
     def close(self):
         """关闭浏览器"""

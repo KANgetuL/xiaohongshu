@@ -142,54 +142,96 @@ class SimpleXHSCrawler:
     
     def search_and_crawl(self, keyword: str):
         """搜索关键词并爬取内容"""
-        try:
-            # 构建搜索URL
-            import urllib.parse
-            encoded_keyword = urllib.parse.quote(keyword)
-            search_url = f"https://www.xiaohongshu.com/search_result?keyword={encoded_keyword}"
-            
-            # 访问搜索页面
-            self.logger.info(f"访问搜索页面: {search_url}")
-            if not self.selenium_handler.get_page(search_url, wait_selector=".feeds-container"):
-                self.logger.warning(f"搜索页面访问失败: {keyword}")
-                return
-            
-            # 等待更长时间确保内容加载
-            time.sleep(5)  # 增加到5秒
-            
-            # 尝试滚动加载更多内容
-            self._scroll_page_for_more_content()
-            
-            # 检查登录状态
-            if not self.selenium_handler.is_logged_in():
-                self.logger.warning(f"搜索'{keyword}'时可能受限，尝试重新登录")
-                self.selenium_handler.login_with_cookies(search_url)
-            
-            # 获取页面源码
-            page_source = self.selenium_handler.driver.page_source
-            
-            # 保存页面源码用于调试
-            self._save_page_for_debug(page_source, keyword)
-            
-            # 解析搜索结果 - 尝试多种解析方法
-            notes = self._parse_search_results_with_fallback(page_source, keyword)
-            
-            self.logger.info(f"解析到 {len(notes)} 个笔记")
-            
-            if not notes:
-                self.logger.warning(f"未找到关键词'{keyword}'的笔记")
-                return
-            
-            # 处理每个笔记
-            for note in notes:
-                if len(self.collected_comics) >= self.max_comics:
-                    break
+        max_attempts = 3
+        
+        for attempt in range(max_attempts):
+            try:
+                self.logger.info(f"搜索关键词 '{keyword}' (尝试 {attempt+1}/{max_attempts})")
                 
-                self.process_note(note)
+                # 构建搜索URL
+                import urllib.parse
+                encoded_keyword = urllib.parse.quote(keyword)
+                search_url = f"https://www.xiaohongshu.com/search_result?keyword={encoded_keyword}"
                 
-        except Exception as e:
-            self.logger.error(f"搜索爬取失败: {e}", exc_info=True)
-
+                # 访问搜索页面
+                self.logger.info(f"访问搜索页面: {search_url}")
+                
+                # 添加人类行为模拟
+                self.selenium_handler.add_human_like_behavior()
+                
+                # 访问页面（使用增强的get_page方法）
+                if not self.selenium_handler.get_page(search_url, wait_selector=".feeds-container", max_retries=2):
+                    self.logger.warning(f"搜索页面访问失败: {keyword}")
+                    
+                    if attempt < max_attempts - 1:
+                        self.logger.info(f"等待5秒后重试...")
+                        time.sleep(5)
+                        continue
+                    else:
+                        self.logger.error(f"重试 {max_attempts} 次后仍然失败")
+                        return
+                
+                # 检查页面是否正常
+                if self.selenium_handler.check_page_redirected():
+                    self.logger.warning(f"页面被重定向，尝试恢复...")
+                    
+                    if attempt < max_attempts - 1:
+                        if self.selenium_handler.handle_page_redirect(search_url):
+                            self.logger.info("页面恢复成功，继续处理")
+                            continue
+                        else:
+                            self.logger.warning("页面恢复失败，等待后重试")
+                            time.sleep(5)
+                            continue
+                    else:
+                        self.logger.error(f"重试 {max_attempts} 次后仍然被重定向")
+                        return
+                
+                # 等待页面加载
+                time.sleep(5)  # 增加到5秒
+                
+                # 检查登录状态
+                if not self.selenium_handler.is_logged_in():
+                    self.logger.warning(f"搜索'{keyword}'时可能受限，尝试重新登录")
+                    self.selenium_handler.login_with_cookies(search_url)
+                
+                # 获取页面源码
+                page_source = self.selenium_handler.driver.page_source
+                
+                # 保存页面源码用于调试
+                self._save_page_for_debug(page_source, keyword)
+                
+                # 解析搜索结果
+                notes = self.parser.parse_search_results_direct(page_source, keyword)
+                
+                self.logger.info(f"解析到 {len(notes)} 个笔记")
+                
+                if not notes:
+                    self.logger.warning(f"未找到关键词'{keyword}'的笔记")
+                    return
+                
+                # 处理每个笔记
+                for note in notes:
+                    if len(self.collected_comics) >= self.max_comics:
+                        break
+                    
+                    # 添加随机延迟，避免请求过快
+                    time.sleep(random.uniform(1, 3))
+                    self.process_note(note)
+                
+                # 成功完成搜索，退出重试循环
+                break
+                
+            except Exception as e:
+                self.logger.error(f"搜索爬取失败 (尝试 {attempt+1}/{max_attempts}): {e}")
+                
+                if attempt < max_attempts - 1:
+                    self.logger.info(f"等待{5 * (attempt + 1)}秒后重试...")
+                    time.sleep(5 * (attempt + 1))
+                    continue
+                else:
+                    self.logger.error(f"重试 {max_attempts} 次后仍然失败")
+                    return
     def _scroll_page_for_more_content(self):
         """滚动页面加载更多内容"""
         try:
