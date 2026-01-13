@@ -25,13 +25,6 @@ class XHSParser:
     def parse_search_results_direct(self, page_source: str, keyword: str) -> List[Dict[str, Any]]:
         """
         解析小红书直接搜索结果页面
-        
-        Args:
-            page_source: 页面HTML源代码
-            keyword: 搜索关键词
-            
-        Returns:
-            笔记列表
         """
         notes = []
         
@@ -40,11 +33,15 @@ class XHSParser:
             
             # 小红书搜索结果有多种布局，尝试多种选择器
             selectors = [
-                'a[href*="/explore/"]',  # 探索链接
-                'div[class*="note"]',    # 笔记相关
-                'div[class*="card"]',    # 卡片
-                'article',               # 文章
-                'section',               # 区块
+                'div[data-note-id]',  # 小红书2024年新的数据结构
+                'div.note-item',       # 笔记项
+                'article',             # 文章标签
+                'div[class*="note-"]', # 包含note的类
+                'div[class*="feed-"]', # feed流
+                'div[class*="card-"]', # 卡片
+                'a[href*="/explore/"]', # 探索链接
+                'div[class*="item"]',   # item类
+                'section',              # 区块
             ]
             
             all_elements = []
@@ -64,12 +61,15 @@ class XHSParser:
             
             self.logger.info(f"总共找到 {len(unique_elements)} 个候选元素")
             
-            for element in unique_elements[:30]:  # 限制处理数量
+            # 尝试不同的提取方法
+            for element in unique_elements[:50]:  # 限制处理数量
                 note_info = self._extract_note_from_element(element)
                 if note_info and self._validate_note_info(note_info):
-                    note_info['search_keyword'] = keyword
-                    notes.append(note_info)
-                    
+                    # 关键词过滤：确保笔记内容与关键词相关
+                    if self._is_related_to_keyword(note_info, keyword):
+                        note_info['search_keyword'] = keyword
+                        notes.append(note_info)
+                        
             self.logger.info(f"成功解析 {len(notes)} 个笔记")
             
         except Exception as e:
@@ -78,113 +78,109 @@ class XHSParser:
             traceback.print_exc()
         
         return notes
-    
-    def _extract_note_from_element(self, element) -> Optional[Dict[str, Any]]:
+
+    def _is_related_to_keyword(self, note_info: Dict[str, Any], keyword: str) -> bool:
         """
-        从元素中提取笔记信息
+        检查笔记是否与关键词相关
+        """
+        # 提取所有文本
+        texts = []
+        if note_info.get('title'):
+            texts.append(note_info['title'].lower())
+        if note_info.get('content'):
+            texts.append(note_info['content'].lower())
+        if note_info.get('tags'):
+            for tag in note_info['tags']:
+                texts.append(tag.lower())
         
-        Args:
-            element: BeautifulSoup元素
-            
-        Returns:
-            笔记信息字典
+        all_text = ' '.join(texts)
+        
+        # 关键词字典
+        keyword_dict = {
+            '外卖翻车': ['外卖', '翻车', '美团', '饿了么', '送餐', '外卖小哥', '点餐', '吃啥'],
+            '点餐翻车': ['点餐', '翻车', '外卖', '美团', '饿了么', '餐厅', '吃啥'],
+            '外卖漫画': ['外卖', '漫画', '美团', '饿了么', '送餐', '画', '插图'],
+            '点餐漫画': ['点餐', '漫画', '外卖', '餐厅', '画', '插图']
+        }
+        
+        # 获取相关关键词
+        related_keywords = keyword_dict.get(keyword, [keyword])
+        
+        # 检查是否包含任一关键词
+        for kw in related_keywords:
+            if kw in all_text:
+                return True
+        
+        return False    
+    def _extract_note_from_element_v2(self, element) -> Optional[Dict[str, Any]]:
+        """
+        备用方法提取笔记信息
         """
         try:
-            note_info = {}
+            # 方法1: 从data-note-id属性提取
+            if element.has_attr('data-note-id'):
+                note_id = element['data-note-id']
+                if len(note_id) == 24:  # 小红书笔记ID通常是24位十六进制
+                    return self._extract_from_element_with_id(element, note_id)
             
-            # 1. 提取笔记ID和URL
-            note_id = None
-            note_url = None
-            
-            # 查找包含/explore/的链接
+            # 方法2: 从链接中提取
             links = element.find_all('a', href=True)
             for link in links:
                 href = link['href']
                 if '/explore/' in href:
-                    # 提取笔记ID
-                    match = re.search(r'/explore/([a-f0-9]+)', href)
+                    match = re.search(r'/explore/([a-f0-9]{24})', href)
                     if match:
                         note_id = match.group(1)
-                        note_url = urljoin('https://www.xiaohongshu.com', href)
-                        break
+                        return self._extract_from_element_with_id(element, note_id)
             
-            if not note_id:
-                # 尝试从其他属性提取
-                if element.has_attr('data-note-id'):
-                    note_id = element['data-note-id']
-                elif element.has_attr('data-id'):
-                    data_id = element['data-id']
-                    if len(data_id) == 24:  # 小红书笔记ID通常是24位十六进制
-                        note_id = data_id
+            # 方法3: 从类名中识别
+            element_str = str(element)
+            if 'data-note-id' in element_str:
+                match = re.search(r'data-note-id="([a-f0-9]{24})"', element_str)
+                if match:
+                    note_id = match.group(1)
+                    return self._extract_from_element_with_id(element, note_id)
             
-            if not note_id:
-                return None
-            
-            note_info['note_id'] = note_id
-            note_info['url'] = note_url or f"https://www.xiaohongshu.com/explore/{note_id}"
-            
-            # 2. 提取标题和描述
-            text_elements = element.find_all(['h1', 'h2', 'h3', 'h4', 'p', 'div', 'span'])
-            texts = []
-            for elem in text_elements:
-                text = elem.get_text(strip=True)
-                if text and len(text) > 5 and len(text) < 200:
-                    texts.append(text)
-            
-            if texts:
-                # 取最长的文本作为标题
-                note_info['title'] = max(texts, key=len)
-                
-                # 所有文本作为内容
-                note_info['content'] = ' '.join(texts[:3])  # 只取前3个
-            
-            # 3. 提取封面图片
-            img_elements = element.find_all('img', src=True)
-            for img in img_elements:
-                src = img.get('src')
-                if src and 'http' in src:
-                    # 过滤小图标
-                    if any(x in src.lower() for x in ['icon', 'avatar', 'logo', 'default']):
-                        continue
-                    
-                    # 确保URL完整
-                    if src.startswith('//'):
-                        src = 'https:' + src
-                    elif src.startswith('/'):
-                        src = urljoin('https://www.xiaohongshu.com', src)
-                    
-                    note_info['cover_url'] = src
-                    break
-            
-            # 4. 提取用户信息
-            user_elements = element.find_all(['div', 'span'], class_=re.compile(r'user|author|name'))
-            for user_elem in user_elements:
-                text = user_elem.get_text(strip=True)
-                if text and 2 <= len(text) <= 20:
-                    note_info['username'] = text
-                    break
-            
-            # 5. 提取标签
-            tags = []
-            tag_elements = element.find_all(['a', 'span'], class_=re.compile(r'tag|topic|label'))
-            for tag_elem in tag_elements:
-                tag_text = tag_elem.get_text(strip=True)
-                if tag_text and tag_text.startswith('#'):
-                    tags.append(tag_text[1:])  # 去掉#号
-            
-            # 从文本中提取标签
-            all_text = element.get_text()
-            hash_tags = re.findall(r'#([^#\s]+)', all_text)
-            tags.extend(hash_tags[:5])  # 最多取5个
-            
-            note_info['tags'] = list(set(tags))
-            
-            return note_info
+            return None
             
         except Exception as e:
-            self.logger.debug(f"提取笔记信息失败: {str(e)}")
+            self.logger.debug(f"备用提取方法失败: {str(e)}")
             return None
-    
+
+    def _extract_from_element_with_id(self, element, note_id: str) -> Dict[str, Any]:
+        """
+        从具有ID的元素中提取信息
+        """
+        note_info = {'note_id': note_id}
+        
+        # 提取标题
+        title_elements = element.find_all(['h1', 'h2', 'h3', 'h4', 'h5', 'div', 'span'])
+        for elem in title_elements:
+            text = elem.get_text(strip=True)
+            if 5 <= len(text) <= 100:  # 合理的标题长度
+                note_info['title'] = text
+                break
+        
+        # 提取内容
+        content_elements = element.find_all(['p', 'div', 'span'])
+        content_texts = []
+        for elem in content_elements:
+            text = elem.get_text(strip=True)
+            if 10 <= len(text) <= 200:
+                content_texts.append(text)
+        
+        if content_texts:
+            note_info['content'] = ' '.join(content_texts[:3])
+        
+        # 提取图片
+        img_elements = element.find_all('img', src=True)
+        for img in img_elements:
+            src = img.get('src')
+            if src and 'http' in src and not any(x in src.lower() for x in ['icon', 'avatar', 'logo']):
+                note_info['cover_url'] = src
+                break
+        
+        return note_info    
     def _validate_note_info(self, note_info: Dict[str, Any]) -> bool:
         """
         验证笔记信息是否有效

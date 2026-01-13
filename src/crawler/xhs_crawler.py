@@ -154,8 +154,11 @@ class SimpleXHSCrawler:
                 self.logger.warning(f"搜索页面访问失败: {keyword}")
                 return
             
-            # 等待页面加载
-            time.sleep(CRAWLER_SETTINGS.get("scroll_pause_time", 3))
+            # 等待更长时间确保内容加载
+            time.sleep(5)  # 增加到5秒
+            
+            # 尝试滚动加载更多内容
+            self._scroll_page_for_more_content()
             
             # 检查登录状态
             if not self.selenium_handler.is_logged_in():
@@ -165,8 +168,12 @@ class SimpleXHSCrawler:
             # 获取页面源码
             page_source = self.selenium_handler.driver.page_source
             
-            # 解析搜索结果 - 使用新的方法名
-            notes = self.parser.parse_search_results_direct(page_source, keyword)
+            # 保存页面源码用于调试
+            self._save_page_for_debug(page_source, keyword)
+            
+            # 解析搜索结果 - 尝试多种解析方法
+            notes = self._parse_search_results_with_fallback(page_source, keyword)
+            
             self.logger.info(f"解析到 {len(notes)} 个笔记")
             
             if not notes:
@@ -182,7 +189,61 @@ class SimpleXHSCrawler:
                 
         except Exception as e:
             self.logger.error(f"搜索爬取失败: {e}", exc_info=True)
-    
+
+    def _scroll_page_for_more_content(self):
+        """滚动页面加载更多内容"""
+        try:
+            # 滚动3次以加载更多内容
+            for i in range(3):
+                self.selenium_handler.driver.execute_script(
+                    "window.scrollTo(0, document.body.scrollHeight);"
+                )
+                time.sleep(2)  # 等待加载
+                self.logger.info(f"第{i+1}次滚动页面")
+        except Exception as e:
+            self.logger.debug(f"滚动页面失败: {e}")
+
+    def _save_page_for_debug(self, page_source: str, keyword: str):
+        """保存页面源码用于调试"""
+        try:
+            debug_dir = Path("debug_pages")
+            debug_dir.mkdir(exist_ok=True)
+            
+            filename = debug_dir / f"search_{keyword}_{int(time.time())}.html"
+            with open(filename, 'w', encoding='utf-8') as f:
+                f.write(page_source)
+            
+            self.logger.info(f"页面源码已保存到: {filename}")
+        except Exception as e:
+            self.logger.debug(f"保存页面源码失败: {e}")
+
+    def _parse_search_results_with_fallback(self, page_source: str, keyword: str) -> List[Dict[str, Any]]:
+        """使用备用方法解析搜索结果"""
+        # 方法1: 主要解析方法
+        notes = self.parser.parse_search_results_direct(page_source, keyword)
+        
+        if notes:
+            return notes
+        
+        # 方法2: 尝试直接提取所有链接
+        self.logger.info("主要解析方法失败，尝试备用方法...")
+        import re
+        
+        # 从页面源码直接提取笔记ID
+        note_ids = re.findall(r'/explore/([a-f0-9]{24})', page_source)
+        note_ids = list(set(note_ids))  # 去重
+        
+        notes = []
+        for note_id in note_ids[:10]:  # 最多处理10个
+            note_info = {
+                'note_id': note_id,
+                'url': f"https://www.xiaohongshu.com/explore/{note_id}",
+                'search_keyword': keyword
+            }
+            notes.append(note_info)
+        
+        self.logger.info(f"备用方法找到 {len(notes)} 个笔记ID")
+        return notes    
     def process_note(self, note_info: Dict[str, Any]):
         """处理单个笔记"""
         try:
