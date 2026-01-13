@@ -1,0 +1,74 @@
+{
+  "image_01.jpg": {
+    "image_path": "comic_002\\images\\image_01.jpg",
+    "text": "奶奶骂了他两句，他就真走了..唉！大郎酱4.8万",
+    "order": 1,
+    "tags": [
+      "外卖",
+      "点餐",
+      "翻车",
+      "吃啥",
+      "漫画"
+    ]
+  },
+  "image_02.jpg": {
+    "image_path": "comic_002\\images\\image_02.jpg",
+    "text": "奶奶骂了他两句，他就真走了..唉！大郎酱4.8万",
+    "order": 2,
+    "tags": [
+      "外卖",
+      "点餐",
+      "翻车",
+      "吃啥",
+      "漫画"
+    ]
+  },
+  "image_03.jpg": {
+    "image_path": "comic_002\\images\\image_03.jpg",
+    "text": "奶奶骂了他两句，他就真走了..唉！大郎酱4.8万",
+    "order": 3,
+    "tags": [
+      "外卖",
+      "点餐",
+      "翻车",
+      "吃啥",
+      "漫画"
+    ]
+  },
+  "image_04.jpg": {
+    "image_path": "comic_002\\images\\image_04.jpg",
+    "text": "奶奶骂了他两句，他就真走了..唉！大郎酱4.8万",
+    "order": 4,
+    "tags": [
+      "外卖",
+      "点餐",
+      "翻车",
+      "吃啥",
+      "漫画"
+    ]
+  },
+  "image_05.jpg": {
+    "image_path": "comic_002\\images\\image_05.jpg",
+    "text": "奶奶骂了他两句，他就真走了..唉！大郎酱4.8万",
+    "order": 5,
+    "tags": [
+      "外卖",
+      "点餐",
+      "翻车",
+      "吃啥",
+      "漫画"
+    ]
+  },
+  "image_06.jpg": {
+    "image_path": "comic_002\\images\\image_06.jpg",
+    "text": "奶奶骂了他两句，他就真走了..唉！大郎酱4.8万",
+    "order": 6,
+    "tags": [
+      "外卖",
+      "点餐",
+      "翻车",
+      "吃啥",
+      "漫画"
+    ]
+  }
+}

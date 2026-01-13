@@ -1,54 +1,5 @@
 PS D:\1- VS file menu\xiaohongshu> pyenv shell 3.13.0
-PS D:\1- VS file menu\xiaohongshu> & C:/Users/hp/.pyenv/pyenv-win/versions/3.13.0/python.exe "d:/1- VS file menu/xiaohongshu/scripts/quick_test.py"
-快速测试小红书爬虫
-==================================================
-启动浏览器...
-
-DevTools listening on ws://127.0.0.1:49950/devtools/browser/bf3fad31-3e90-40c1-8d36-6502eb9b66bd
-2026-01-13 12:58:30,390 - selenium_handler - INFO - Selenium浏览器初始化成功: chrome
-
-1. 测试搜索: 外卖翻车
-2026-01-13 12:58:30,390 - selenium_handler - INFO - 直接访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E5%A4%96%E5%8D%96%E7%BF%BB%E8%BD%A6
-[19468:23688:0113/125830.870:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8401900BC000000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[19468:23688:0113/125830.939:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8701900BC000000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[19468:23688:0113/125831.085:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8A01900BC000000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[19468:23688:0113/125831.496:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A870AE00BC000000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[19468:23688:0113/125831.556:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8A0AE00BC000000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-2026-01-13 12:58:36,782 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
-2026-01-13 13:00:15,247 - selenium_handler - INFO - 尝试按ESC键关闭弹窗
-✓ 搜索成功
-  页面标题: 小红书 - 你的生活兴趣社区
-  页面源代码已保存到: test_search_page.html
-2026-01-13 13:00:16,563 - selenium_handler - INFO - 提取到 24 张图片
-  提取到 24 张图片
-  第一张图片: https://sns-webpic-qc.xhscdn.com/202601131258/0588ad1bc6cf0f983289a99ef962010f/n...
-
-按Enter键继续测试笔记页面...
-
-2. 测试笔记页面
-  尝试访问笔记: 6587b9c2000000001f01f6a1
-2026-01-13 13:00:28,081 - selenium_handler - INFO - 访问笔记页面: https://www.xiaohongshu.com/explore/6587b9c2000000001f01f6a1
-[19468:23688:0113/130028.464:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8401900BC000000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[19468:23688:0113/130028.559:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8A01900BC000000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[19468:23688:0113/130028.730:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A840AE00BC000000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[19468:23688:0113/130029.127:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8D0AE00BC000000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[19468:23688:0113/130029.235:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8C06100BC000000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[19468:23688:0113/130030.055:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8206200BC000000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[19468:23688:0113/130030.153:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8506200BC000000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[19468:23688:0113/130030.263:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8F06100BC000000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[19468:23688:0113/130031.208:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A840AE00BC000000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[19468:23688:0113/130031.282:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8401900BC000000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-2026-01-13 13:00:36,481 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
-✓ 笔记页面访问成功
-  页面标题: 小红书 - 你的生活兴趣社区
-  笔记页面源代码已保存到: test_note_page.html
-
-✓ 测试完成
-
-按Enter键关闭浏览器...
-2026-01-13 13:01:03,487 - selenium_handler - INFO - 浏览器已关闭
-✓ 浏览器已关闭
-PS D:\1- VS file menu\xiaohongshu> & C:/Users/hp/.pyenv/pyenv-win/versions/3.13.0/python.exe "d:/1- VS file menu/xiaohongshu/src/main.py"
+ons/3.13.0/python.exe "d:/1- VS file menu/xiaohongshu/src/main.py"
 小红书连环画爬取项目 (简化版)
 ==================================================
 ✓ Selenium 已安装
@@ -61,7 +12,7 @@ Created directory: D:\1- VS file menu\xiaohongshu\data\processed
 Created directory: D:\1- VS file menu\xiaohongshu\data\processed\comics
 Created directory: D:\1- VS file menu\xiaohongshu\data\logs
 初始化日志系统...
-2026-01-13 13:01:09,116 - xhs_crawler - INFO - 项目初始化完成
+2026-01-13 15:01:32,938 - xhs_crawler - INFO - 项目初始化完成
 
 项目配置:
 目标主题: 外卖/点餐翻车
@@ -89,258 +40,231 @@ Created directory: D:\1- VS file menu\xiaohongshu\data\logs
 注意: 浏览器界面将会显示，请勿操作浏览器窗口
 如果有登录弹窗，程序会尝试自动关闭
 如果页面卡住，可以手动关闭浏览器窗口
-2026-01-13 13:01:18,237 - xhs_crawler - INFO - 开始执行简化版爬虫任务
+2026-01-13 15:01:47,543 - xhs_crawler - INFO - 开始执行简化版爬虫任务
+2026-01-13 15:01:47,543 - xhs_crawler - INFO - 开始爬取流程
+C:\Users\hp\.pyenv\pyenv-win\versions\3.13.0\Lib\site-packages\urllib3\connectionpool.py:1064: InsecureRequestWarning: Unverified HTTPS request is being made to host 'googlechromelabs.github.io'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(
+C:\Users\hp\.pyenv\pyenv-win\versions\3.13.0\Lib\site-packages\urllib3\connectionpool.py:1064: InsecureRequestWarning: Unverified HTTPS request is being made to host 'googlechromelabs.github.io'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(
 
-DevTools listening on ws://127.0.0.1:55183/devtools/browser/6f12e20c-6a40-4983-842c-5622dbb8a56c
-2026-01-13 13:01:23,334 - selenium_handler - INFO - Selenium浏览器初始化成功: chrome
-2026-01-13 13:01:23,335 - simple_xhs_crawler - INFO - 开始爬取小红书连环画
-2026-01-13 13:01:23,335 - simple_xhs_crawler - INFO - 处理关键词: 外卖翻车
-2026-01-13 13:01:23,335 - simple_xhs_crawler - INFO - 搜索关键词: 外卖翻车
-2026-01-13 13:01:23,335 - selenium_handler - INFO - 直接访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E5%A4%96%E5%8D%96%E7%BF%BB%E8%BD%A6  
-[5020:8772:0113/130123.764:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8C01900742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130123.833:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8F01900742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130123.977:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8201A00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130124.422:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8B0AE00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130124.486:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8E0AE00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-2026-01-13 13:01:29,726 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
-2026-01-13 13:03:08,383 - selenium_handler - INFO - 尝试按ESC键关闭弹窗
-2026-01-13 13:03:09,064 - xhs_parser - INFO - 总共找到 48 个候选元素
-2026-01-13 13:03:09,067 - xhs_parser - INFO - 成功解析 6 个笔记
-2026-01-13 13:03:09,067 - simple_xhs_crawler - INFO - 解析到 6 个笔记
-2026-01-13 13:03:09,067 - simple_xhs_crawler - INFO - 处理笔记: 694e4d72000000001d039ab4
-2026-01-13 13:03:09,067 - selenium_handler - INFO - 访问笔记页面: https://www.xiaohongshu.com/explore/694e4d72000000001d039ab4
-[5020:8772:0113/130309.550:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8201A00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130309.641:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8C01900742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130309.809:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A880AE00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130310.279:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A810AF00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130310.340:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8801C02742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130311.063:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8E01C02742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130311.153:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8101D02742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130311.239:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8B01C02742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130312.077:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A880AE00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130312.162:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8201A00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-2026-01-13 13:03:17,369 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
-2026-01-13 13:03:23,263 - xhs_parser - INFO - 解析到笔记: ID=694e4d72000000001d039ab4, 标题长度=6, 图片数=20
-2026-01-13 13:03:23,265 - simple_xhs_crawler - WARNING - 笔记验证失败: 694e4d72000000001d039ab4
-2026-01-13 13:03:23,265 - simple_xhs_crawler - INFO - 处理笔记: 694fc565000000002103c8f9
-2026-01-13 13:03:23,266 - selenium_handler - INFO - 访问笔记页面: https://www.xiaohongshu.com/explore/694fc565000000002103c8f9
-[5020:8772:0113/130323.650:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8E01C02742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130323.738:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8B01C02742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130323.822:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8802402742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130324.192:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8B02402742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130324.256:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8E02402742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130325.271:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8407502742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130325.389:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8102502742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130325.516:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8707502742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130326.503:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8E01C02742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130326.584:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8F01900742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-2026-01-13 13:03:29,816 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
-2026-01-13 13:03:35,387 - xhs_parser - INFO - 解析到笔记: ID=694fc565000000002103c8f9, 标题长度=6, 图片数=20
-2026-01-13 13:03:35,388 - simple_xhs_crawler - WARNING - 笔记验证失败: 694fc565000000002103c8f9
-2026-01-13 13:03:35,388 - simple_xhs_crawler - INFO - 处理笔记: 695b2301000000002200a799
-2026-01-13 13:03:35,388 - selenium_handler - INFO - 访问笔记页面: https://www.xiaohongshu.com/explore/695b2301000000002200a799
-[5020:8772:0113/130335.794:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8802402742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130335.941:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8B0AE00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130336.070:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8E0AE00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130336.634:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8C01900742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130336.745:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8407502742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130338.052:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8802402742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130338.179:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8E0AE00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130338.288:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8707502742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130339.347:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A810AF00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130339.428:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8801C02742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-2026-01-13 13:03:44,614 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
-2026-01-13 13:03:50,463 - xhs_parser - INFO - 解析到笔记: ID=695b2301000000002200a799, 标题长度=6, 图片数=20
-2026-01-13 13:03:50,463 - simple_xhs_crawler - WARNING - 笔记验证失败: 695b2301000000002200a799
-2026-01-13 13:03:50,463 - simple_xhs_crawler - INFO - 处理笔记: 6955591b00000000220202ed
-2026-01-13 13:03:50,464 - selenium_handler - INFO - 访问笔记页面: https://www.xiaohongshu.com/explore/6955591b00000000220202ed
-[5020:8772:0113/130351.026:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8802402742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130351.132:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8101D02742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130351.227:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8707502742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130351.637:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A880AE00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130351.751:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8201A00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130352.546:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8B01C02742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130352.653:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8B02402742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130352.738:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8E02402742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130353.662:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8802402742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130353.748:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8102502742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-2026-01-13 13:03:58,950 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
-2026-01-13 13:04:04,945 - xhs_parser - INFO - 解析到笔记: ID=6955591b00000000220202ed, 标题长度=6, 图片数=20
-2026-01-13 13:04:04,945 - simple_xhs_crawler - WARNING - 笔记验证失败: 6955591b00000000220202ed
-2026-01-13 13:04:04,945 - simple_xhs_crawler - INFO - 处理笔记: 69401190000000000d03c98e
-2026-01-13 13:04:04,945 - selenium_handler - INFO - 访问笔记页面: https://www.xiaohongshu.com/explore/69401190000000000d03c98e
-[5020:8772:0113/130405.321:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8E02402742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130405.426:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8B01C02742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130405.526:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8707502742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130406.060:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8E01C02742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130406.144:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8F01900742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130407.227:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8B0AE00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130407.294:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8C01900742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130407.373:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8407502742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130408.095:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8E02402742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130408.154:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8E0AE00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-2026-01-13 13:04:11,720 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
-2026-01-13 13:04:17,251 - xhs_parser - INFO - 解析到笔记: ID=69401190000000000d03c98e, 标题长度=6, 图片数=20
-2026-01-13 13:04:17,251 - simple_xhs_crawler - WARNING - 笔记验证失败: 69401190000000000d03c98e
-2026-01-13 13:04:17,251 - simple_xhs_crawler - INFO - 处理笔记: 694a5d80000000001e027161
-2026-01-13 13:04:17,251 - selenium_handler - INFO - 访问笔记页面: https://www.xiaohongshu.com/explore/694a5d80000000001e027161
-[5020:8772:0113/130417.688:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8707502742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130417.747:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A810AF00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130417.815:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8801C02742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130418.170:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8101D02742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130418.248:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8A07502742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130419.288:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8B0AE00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130419.353:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A880AE00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130419.430:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8201A00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130420.199:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8801C02742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130420.278:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8B02402742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-2026-01-13 13:04:23,861 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
-2026-01-13 13:04:29,381 - xhs_parser - INFO - 解析到笔记: ID=694a5d80000000001e027161, 标题长度=6, 图片数=20
-2026-01-13 13:04:29,383 - simple_xhs_crawler - WARNING - 笔记验证失败: 694a5d80000000001e027161
-2026-01-13 13:04:29,383 - simple_xhs_crawler - INFO - 处理关键词: 点餐翻车
-2026-01-13 13:04:29,383 - simple_xhs_crawler - INFO - 搜索关键词: 点餐翻车
-2026-01-13 13:04:29,383 - selenium_handler - INFO - 直接访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E7%82%B9%E9%A4%90%E7%BF%BB%E8%BD%A6  
-[5020:8772:0113/130429.696:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8407502742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130429.778:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8802402742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130429.859:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8102502742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130430.287:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8B0AE00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130430.343:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8B01C02742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-2026-01-13 13:04:35,489 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
-2026-01-13 13:06:14,099 - selenium_handler - INFO - 尝试按ESC键关闭弹窗
-2026-01-13 13:06:14,600 - xhs_parser - INFO - 总共找到 48 个候选元素
-2026-01-13 13:06:14,602 - xhs_parser - INFO - 成功解析 6 个笔记
-2026-01-13 13:06:14,602 - simple_xhs_crawler - INFO - 解析到 6 个笔记
-2026-01-13 13:06:14,603 - simple_xhs_crawler - INFO - 处理笔记: 6949c377000000001e025313
-2026-01-13 13:06:14,603 - selenium_handler - INFO - 访问笔记页面: https://www.xiaohongshu.com/explore/6949c377000000001e025313
-[5020:8772:0113/130615.035:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8201A00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130615.089:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8407502742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130615.161:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8707502742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130615.445:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8E01C02742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130615.487:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8F01900742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130616.400:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8201A00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130616.506:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8C01900742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130616.590:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8707502742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130617.461:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8E02402742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130617.535:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8E0AE00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-2026-01-13 13:06:22,703 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
-2026-01-13 13:06:28,580 - xhs_parser - INFO - 解析到笔记: ID=6949c377000000001e025313, 标题长度=6, 图片数=20
-2026-01-13 13:06:28,580 - simple_xhs_crawler - WARNING - 笔记验证失败: 6949c377000000001e025313
-2026-01-13 13:06:28,580 - simple_xhs_crawler - INFO - 处理笔记: 69531979000000001e00c6b5
-2026-01-13 13:06:28,581 - selenium_handler - INFO - 访问笔记页面: https://www.xiaohongshu.com/explore/69531979000000001e00c6b5
-[5020:8772:0113/130628.973:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A810AF00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130629.060:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8101D02742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130629.152:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8A07502742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130629.597:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8201A00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130629.660:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A880AE00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130630.608:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8D07502742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130630.706:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8801C02742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130630.796:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8B02402742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130631.677:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A810AF00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130631.751:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8802402742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-2026-01-13 13:06:36,899 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
-2026-01-13 13:06:42,777 - xhs_parser - INFO - 解析到笔记: ID=69531979000000001e00c6b5, 标题长度=6, 图片数=20
-2026-01-13 13:06:42,778 - simple_xhs_crawler - WARNING - 笔记验证失败: 69531979000000001e00c6b5
-2026-01-13 13:06:42,778 - simple_xhs_crawler - INFO - 处理笔记: 69512598000000001e010b2f
-2026-01-13 13:06:42,778 - selenium_handler - INFO - 访问笔记页面: https://www.xiaohongshu.com/explore/69512598000000001e010b2f
-[5020:8772:0113/130643.147:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8A07502742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130643.247:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8B0AE00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130643.330:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8B01C02742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130643.734:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8B02402742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130643.823:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8D07502742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130644.592:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8407502742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130644.683:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8E01C02742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130644.773:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8F01900742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130645.659:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8C01900742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130645.733:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8B01C02742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-2026-01-13 13:06:50,877 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
-2026-01-13 13:06:56,696 - xhs_parser - INFO - 解析到笔记: ID=69512598000000001e010b2f, 标题长度=6, 图片数=20
-2026-01-13 13:06:56,699 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131306/be82e6f50a709cd1648844157871f065/1040g2sg31q6p501u7o7049pk3105bvu0toa2pr0!nc_n_webp_mw_1
-2026-01-13 13:06:59,099 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131306/be82e6f50a709cd1648844157871f065/1040g2sg31q6p501u7o7049pk3105bvu0toa2pr0!nc_n_webp_mw_1
-2026-01-13 13:06:59,359 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_1768280816699_4616\images\image_01.jpg
-2026-01-13 13:06:59,803 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131306/e4dcfbee3e6cd5a910e3b5779d4c5ab2/1040g2sg31qad5o8t0a0049jouuk1n1nsmntmiig!nc_n_webp_mw_1
-2026-01-13 13:07:01,455 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131306/e4dcfbee3e6cd5a910e3b5779d4c5ab2/1040g2sg31qad5o8t0a0049jouuk1n1nsmntmiig!nc_n_webp_mw_1
-2026-01-13 13:07:01,540 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_1768280816699_4616\images\image_02.jpg
-2026-01-13 13:07:01,540 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131306/a5e177ae0472a0753919619d820f8792/spectrum/1040g0k031qhsc4k5n0005n1g98n1bogr5lmfmhg!nc_n_webp_mw_1
-2026-01-13 13:07:03,622 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131306/a5e177ae0472a0753919619d820f8792/spectrum/1040g0k031qhsc4k5n0005n1g98n1bogr5lmfmhg!nc_n_webp_mw_1
-2026-01-13 13:07:03,657 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_1768280816699_4616\images\image_03.jpg
-2026-01-13 13:07:03,658 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131306/a8ac15845ce0215c3db442de312e34a7/notes_pre_post/1040g3k031qra8rsvg00049m2ra58id2laht79rg!nc_n_webp_mw_1
-2026-01-13 13:07:05,384 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131306/a8ac15845ce0215c3db442de312e34a7/notes_pre_post/1040g3k031qra8rsvg00049m2ra58id2laht79rg!nc_n_webp_mw_1
-2026-01-13 13:07:05,435 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_1768280816699_4616\images\image_04.jpg
-2026-01-13 13:07:05,436 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131306/d04b6c98ed57964df31e6863278df9b0/spectrum/1040g34o31qab0lm0720g5no31mbg8nh67e8ldeg!nc_n_webp_mw_1
-2026-01-13 13:07:07,361 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131306/d04b6c98ed57964df31e6863278df9b0/spectrum/1040g34o31qab0lm0720g5no31mbg8nh67e8ldeg!nc_n_webp_mw_1
-2026-01-13 13:07:07,398 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_1768280816699_4616\images\image_05.jpg
-2026-01-13 13:07:07,400 - simple_xhs_crawler - WARNING - 图片分辨率不足: 640x480
-2026-01-13 13:07:07,401 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131306/55259a8204fd797bfb77c6b318418b7a/notes_uhdr/1040g3qo31qtsus71ng005nkhlnh08eurmkhdjr8!nc_n_webp_mw_1
-2026-01-13 13:07:09,271 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131306/55259a8204fd797bfb77c6b318418b7a/notes_uhdr/1040g3qo31qtsus71ng005nkhlnh08eurmkhdjr8!nc_n_webp_mw_1
-2026-01-13 13:07:09,322 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_1768280816699_4616\images\image_06.jpg
-2026-01-13 13:07:09,323 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131306/f41ad6425b89825b6456b3f3a7f842ad/1040g00831q5bpqqi0a705n2b56849ntc68at1co!nc_n_webp_mw_1
-2026-01-13 13:07:11,396 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131306/f41ad6425b89825b6456b3f3a7f842ad/1040g00831q5bpqqi0a705n2b56849ntc68at1co!nc_n_webp_mw_1
-2026-01-13 13:07:11,421 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_1768280816699_4616\images\image_07.jpg
-2026-01-13 13:07:11,422 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131306/d7acf68b1ace086e51751b76e22916c1/notes_pre_post/1040g3k031q2ptr8b70104156q7jj0u1nfu57ej0!nc_n_webp_mw_1
-2026-01-13 13:07:13,844 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131306/d7acf68b1ace086e51751b76e22916c1/notes_pre_post/1040g3k031q2ptr8b70104156q7jj0u1nfu57ej0!nc_n_webp_mw_1
-2026-01-13 13:07:13,876 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_1768280816699_4616\images\image_08.jpg
-2026-01-13 13:07:13,876 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131306/b6db954775ebd56dbe733b070fd6ed0a/1040g2sg31qabpo9rn2d05n6h2nllk3c8vh8q5r8!nc_n_webp_mw_1
-2026-01-13 13:07:16,277 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131306/b6db954775ebd56dbe733b070fd6ed0a/1040g2sg31qabpo9rn2d05n6h2nllk3c8vh8q5r8!nc_n_webp_mw_1
-2026-01-13 13:07:16,295 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_1768280816699_4616\images\image_09.jpg
-2026-01-13 13:07:16,295 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131306/7757da977cc41356332a30d7ffeb0184/1040g00831r0iuat07u0g40uvogk594da8qiotdg!nc_n_webp_mw_1
-2026-01-13 13:07:17,800 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131306/7757da977cc41356332a30d7ffeb0184/1040g00831r0iuat07u0g40uvogk594da8qiotdg!nc_n_webp_mw_1
-2026-01-13 13:07:17,863 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_1768280816699_4616\images\image_10.jpg
-2026-01-13 13:07:17,865 - simple_xhs_crawler - INFO - 连环画数据保存成功: comic_1768280837864_1727
-2026-01-13 13:07:17,865 - simple_xhs_crawler - INFO - 成功收集连环画 1/3: 马上登录即可
-2026-01-13 13:07:21,904 - simple_xhs_crawler - INFO - 处理笔记: 6946650d000000001e01505d
-2026-01-13 13:07:21,905 - selenium_handler - INFO - 访问笔记页面: https://www.xiaohongshu.com/explore/6946650d000000001e01505d
-[5020:8772:0113/130722.276:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8A07502742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130722.367:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8E02402742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130722.452:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8E0AE00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130722.906:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8707502742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130722.988:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8201A00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130723.925:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8101D02742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130724.022:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8801C02742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130724.116:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A810AF00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130725.054:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8F01900742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130725.150:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8A07502742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-2026-01-13 13:07:30,307 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
-2026-01-13 13:07:36,212 - xhs_parser - INFO - 解析到笔记: ID=6946650d000000001e01505d, 标题长度=6, 图片数=20
-2026-01-13 13:07:36,213 - simple_xhs_crawler - WARNING - 笔记验证失败: 6946650d000000001e01505d
-2026-01-13 13:07:36,213 - simple_xhs_crawler - INFO - 处理笔记: 695ecc7c000000001a036455
-2026-01-13 13:07:36,213 - selenium_handler - INFO - 访问笔记页面: https://www.xiaohongshu.com/explore/695ecc7c000000001a036455
-[5020:8772:0113/130736.614:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8407502742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130736.703:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8102502742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130736.786:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8802402742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130737.187:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A880AE00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130737.273:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8E0AE00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130738.261:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8B0AE00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130738.358:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8B02402742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130738.442:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8D07502742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130739.387:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8802402742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130739.458:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8407502742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-2026-01-13 13:07:44,621 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
-2026-01-13 13:07:50,540 - xhs_parser - INFO - 解析到笔记: ID=695ecc7c000000001a036455, 标题长度=6, 图片数=20
-2026-01-13 13:07:50,540 - simple_xhs_crawler - WARNING - 笔记验证失败: 695ecc7c000000001a036455
-2026-01-13 13:07:50,541 - simple_xhs_crawler - INFO - 处理笔记: 69566d4b000000001d039efa
-2026-01-13 13:07:50,541 - selenium_handler - INFO - 访问笔记页面: https://www.xiaohongshu.com/explore/69566d4b000000001d039efa
-[5020:8772:0113/130750.950:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A810AF00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130751.041:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8B0AE00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130751.137:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8D07502742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130751.541:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8C01900742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130751.625:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8B01C02742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130752.432:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8E02402742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130752.520:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8707502742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130752.619:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8201A00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130753.488:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A810AF00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130753.556:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8D07502742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-2026-01-13 13:07:58,714 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
-2026-01-13 13:08:04,552 - xhs_parser - INFO - 解析到笔记: ID=69566d4b000000001d039efa, 标题长度=6, 图片数=20
-2026-01-13 13:08:04,553 - simple_xhs_crawler - WARNING - 笔记验证失败: 69566d4b000000001d039efa
-2026-01-13 13:08:04,553 - simple_xhs_crawler - INFO - 处理关键词: 外卖漫画
-2026-01-13 13:08:04,553 - simple_xhs_crawler - INFO - 搜索关键词: 外卖漫画
-2026-01-13 13:08:04,553 - selenium_handler - INFO - 直接访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E5%A4%96%E5%8D%96%E6%BC%AB%E7%94%BB  
-[5020:8772:0113/130804.848:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8801C02742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130804.950:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8F01900742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130805.042:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8A07502742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130805.486:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8102502742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-[5020:8772:0113/130805.564:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8201A00742A0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
-2026-01-13 13:08:09,757 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
-[30920:31180:0113/130921.561:ERROR:gpu\ipc\client\command_buffer_proxy_impl.cc:321] GPU state invalid after WaitForGetOffsetInRange.
-[30920:31180:0113/130921.562:ERROR:gpu\ipc\client\command_buffer_proxy_impl.cc:321] GPU state invalid after WaitForGetOffsetInRange.
-[30920:31180:0113/130921.563:ERROR:gpu\ipc\client\command_buffer_proxy_impl.cc:321] GPU state invalid after WaitForGetOffsetInRange.
+DevTools listening on ws://127.0.0.1:50508/devtools/browser/0daa3d3b-2cc6-4bd9-9c3e-f8e3ae9251a8
+2026-01-13 15:01:52,053 - xhs_crawler - INFO - 所有组件初始化成功
+2026-01-13 15:01:52,053 - xhs_crawler - INFO - 开始登录小红书...
+[25644:21844:0113/150152.817:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8F01900944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150152.911:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8201A00944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150153.117:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8C01900944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150153.903:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A840C000944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150154.043:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8C01900944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150157.584:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8201A00944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150157.646:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8F01900944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150157.767:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8C01900944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150158.520:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A840C000944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150158.572:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A870C000944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+2026-01-13 15:02:01,724 - xhs_crawler - INFO - ✅ 登录成功
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\hp\.pyenv\pyenv-win\versions\3.13.0\Lib\logging\__init__.py", line 1153, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'gbk' codec can't encode character '\u2705' in position 47: illegal multibyte sequence
+Call stack:
+  File "d:\1- VS file menu\xiaohongshu\src\main.py", line 188, in <module>
+    main()
+  File "d:\1- VS file menu\xiaohongshu\src\main.py", line 134, in main
+    report = run_simple_crawler(max_comics=max_comics, headless=headless)
+  File "d:\1- VS file menu\xiaohongshu\src\main.py", line 54, in run_simple_crawler
+    report = crawler.crawl()
+  File "D:\1- VS file menu\xiaohongshu\src\crawler\xhs_crawler.py", line 93, in crawl
+    if not self.login_xiaohongshu():
+  File "D:\1- VS file menu\xiaohongshu\src\crawler\xhs_crawler.py", line 133, in login_xiaohongshu
+    self.logger.info("✅ 登录成功")
+Message: '✅ 登录成功'
+Arguments: ()
+2026-01-13 15:02:01,728 - xhs_crawler - INFO - 搜索关键词: ['外卖翻车', '点餐翻车', '外卖漫画', '点餐漫画']
+2026-01-13 15:02:01,728 - xhs_crawler - INFO - 处理关键词: 外卖翻车
+2026-01-13 15:02:01,728 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E5%A4%96%E5%8D%96%E7%BF%BB%E8%BD%A6
+[25644:21844:0113/150202.069:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8C01900944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150202.133:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8201A00944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150202.202:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8A0C000944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150202.609:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8D0C000944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150202.711:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8E0AA01944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+2026-01-13 15:02:08,675 - xhs_parser - INFO - 总共找到 59 个候选元素
+2026-01-13 15:02:08,676 - xhs_parser - INFO - 成功解析 0 个笔记
+2026-01-13 15:02:08,676 - xhs_crawler - INFO - 解析到 0 个笔记
+2026-01-13 15:02:08,676 - xhs_crawler - WARNING - 未找到关键词'外卖翻车'的笔记
+2026-01-13 15:02:08,676 - xhs_crawler - INFO - 处理关键词: 点餐翻车
+2026-01-13 15:02:08,676 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E7%82%B9%E9%A4%90%E7%BF%BB%E8%BD%A6
+[25644:21844:0113/150208.988:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8B0AA01944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150209.043:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A810AB01944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150209.102:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A800FE01944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150209.428:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A880AA01944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150209.506:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A830FE01944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+2026-01-13 15:02:15,865 - xhs_parser - INFO - 总共找到 48 个候选元素
+2026-01-13 15:02:15,869 - xhs_parser - INFO - 成功解析 6 个笔记
+2026-01-13 15:02:15,870 - xhs_crawler - INFO - 解析到 6 个笔记
+2026-01-13 15:02:15,870 - xhs_crawler - INFO - 处理笔记: 68453b25000000000f03aaa6
+[25644:21844:0113/150216.326:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8C01900944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150216.377:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A860FE01944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150216.433:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A800FE01944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150216.779:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8B0AA01944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150216.843:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A800FE01944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150218.577:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A890FE01944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150218.640:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8C00C02944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150218.724:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8F00C02944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150219.378:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8C01900944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150219.435:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8200D02944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+等待元素超时: .note-container
+2026-01-13 15:02:31,825 - xhs_parser - INFO - 解析到笔记: ID=68453b25000000000f03aaa6, 标题长度=20, 图片数=20
+2026-01-13 15:02:31,826 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131502/07f6b6a5f0a6b57ecc8bf19a01fec2e4/1040g00831q42pce17oe05n8q6vg4ermcc58u1e0!nc_n_webp_mw_1
+2026-01-13 15:02:34,260 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131502/07f6b6a5f0a6b57ecc8bf19a01fec2e4/1040g00831q42pce17oe05n8q6vg4ermcc58u1e0!nc_n_webp_mw_1
+2026-01-13 15:02:34,513 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_001\images\image_01.jpg
+2026-01-13 15:02:34,513 - xhs_crawler - INFO - 下载图片成功: image_01.jpg
+2026-01-13 15:02:34,513 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131502/4ab727eff7b144e4a89afb27b1747fbf/1040g00831r5n4iq47o0047sp0i19mlmdfididfo!nc_n_webp_mw_1
+2026-01-13 15:02:36,964 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131502/4ab727eff7b144e4a89afb27b1747fbf/1040g00831r5n4iq47o0047sp0i19mlmdfididfo!nc_n_webp_mw_1
+2026-01-13 15:02:36,982 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_001\images\image_02.jpg
+2026-01-13 15:02:36,983 - xhs_crawler - INFO - 下载图片成功: image_02.jpg
+2026-01-13 15:02:36,983 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131502/c3b01271c7df7906fd45b18e4a3c547c/1040g2sg31quvv4sr7ge05pae9ga0i8amk95pl8o!nc_n_webp_mw_1
+2026-01-13 15:02:39,448 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131502/c3b01271c7df7906fd45b18e4a3c547c/1040g2sg31quvv4sr7ge05pae9ga0i8amk95pl8o!nc_n_webp_mw_1
+2026-01-13 15:02:39,487 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_001\images\image_03.jpg
+2026-01-13 15:02:39,488 - xhs_crawler - INFO - 下载图片成功: image_03.jpg
+2026-01-13 15:02:39,488 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131502/632f6076c736b839b4a2c0d7496a62f4/1040g00831ql1mem600005n25n7akf3r1ovaqjuo!nc_n_webp_mw_1
+2026-01-13 15:02:41,373 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131502/632f6076c736b839b4a2c0d7496a62f4/1040g00831ql1mem600005n25n7akf3r1ovaqjuo!nc_n_webp_mw_1
+2026-01-13 15:02:41,418 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_001\images\image_04.jpg
+2026-01-13 15:02:41,418 - xhs_crawler - INFO - 下载图片成功: image_04.jpg
+2026-01-13 15:02:41,418 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131502/ec8ae49ed2c72778ce4c27498811ea67/1040g00831r4h56qt74005pd0dvpo3t0toabetm0!nc_n_webp_mw_1
+2026-01-13 15:02:43,135 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131502/ec8ae49ed2c72778ce4c27498811ea67/1040g00831r4h56qt74005pd0dvpo3t0toabetm0!nc_n_webp_mw_1
+2026-01-13 15:02:43,147 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_001\images\image_05.jpg
+2026-01-13 15:02:43,147 - xhs_crawler - INFO - 下载图片成功: image_05.jpg
+2026-01-13 15:02:43,147 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131502/64164bb8c6a1c0ce90e5ed6629fb7d86/notes_pre_post/1040g3k831qd4mnkp0a005nsdaiggbq0ic9g1meg!nc_n_webp_mw_1
+2026-01-13 15:02:45,163 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131502/64164bb8c6a1c0ce90e5ed6629fb7d86/notes_pre_post/1040g3k831qd4mnkp0a005nsdaiggbq0ic9g1meg!nc_n_webp_mw_1
+2026-01-13 15:02:45,198 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_001\images\image_06.jpg
+2026-01-13 15:02:45,199 - xhs_crawler - INFO - 下载图片成功: image_06.jpg
+2026-01-13 15:02:45,201 - xhs_crawler - ERROR - 更新全局标注文件失败: Expecting value: line 1 column 1 (char 0)
+2026-01-13 15:02:45,202 - xhs_crawler - INFO - 标注文件生成成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_001\annotations.json
+2026-01-13 15:02:45,202 - xhs_crawler - INFO - 连环画保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_001
+2026-01-13 15:02:45,202 - xhs_crawler - INFO - 成功收集连环画 1/3: 第一个发现这个机位的人一定是个天才！！！
+2026-01-13 15:02:45,202 - xhs_crawler - INFO - 处理笔记: 69460e03000000001f00d82d
+[25644:21844:0113/150245.626:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A890FE01944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150245.760:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8F01900944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150245.874:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8F00C02944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150246.402:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A840C000944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150246.486:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A870C000944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150248.229:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8201A00944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150248.335:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8D0C000944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150248.432:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8E0AA01944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150249.413:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A890FE01944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150249.491:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A810AB01944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+等待元素超时: .note-container
+2026-01-13 15:03:02,647 - xhs_parser - INFO - 解析到笔记: ID=69460e03000000001f00d82d, 标题长度=17, 图片数=20
+2026-01-13 15:03:02,648 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131502/ee0222adc4417e916b5ff5696a5af3d9/1040g00831qv40vidng005q99d2acjpk3j1tl84g!nc_n_webp_mw_1
+2026-01-13 15:03:04,536 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131502/ee0222adc4417e916b5ff5696a5af3d9/1040g00831qv40vidng005q99d2acjpk3j1tl84g!nc_n_webp_mw_1
+2026-01-13 15:03:04,554 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_002\images\image_01.jpg
+2026-01-13 15:03:04,555 - xhs_crawler - INFO - 下载图片成功: image_01.jpg
+2026-01-13 15:03:04,555 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131502/0af008c4c7ddc51ec3cc31bcf8ac90ae/1040g00831qm14e3a7g005p7mijchmfvmktlktio!nc_n_webp_mw_1
+2026-01-13 15:03:06,570 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131502/0af008c4c7ddc51ec3cc31bcf8ac90ae/1040g00831qm14e3a7g005p7mijchmfvmktlktio!nc_n_webp_mw_1
+2026-01-13 15:03:06,605 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_002\images\image_02.jpg
+2026-01-13 15:03:06,605 - xhs_crawler - INFO - 下载图片成功: image_02.jpg
+2026-01-13 15:03:06,605 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131502/ff61af18329020f14d22866ae8cb404d/1040g00831q7h0lednu6g5pae9ga0i8amotlfv18!nc_n_webp_mw_1
+2026-01-13 15:03:08,616 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131502/ff61af18329020f14d22866ae8cb404d/1040g00831q7h0lednu6g5pae9ga0i8amotlfv18!nc_n_webp_mw_1
+2026-01-13 15:03:08,646 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_002\images\image_03.jpg
+2026-01-13 15:03:08,646 - xhs_crawler - INFO - 下载图片成功: image_03.jpg
+2026-01-13 15:03:08,646 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131502/cfcfad0f4770882b0c777afb0dc04480/1040g2sg31q43rpjpg0705onaie3noulgj08fi9o!nc_n_webp_mw_1
+2026-01-13 15:03:10,685 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131502/cfcfad0f4770882b0c777afb0dc04480/1040g2sg31q43rpjpg0705onaie3noulgj08fi9o!nc_n_webp_mw_1
+2026-01-13 15:03:10,699 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_002\images\image_04.jpg
+2026-01-13 15:03:10,699 - xhs_crawler - INFO - 下载图片成功: image_04.jpg
+2026-01-13 15:03:10,699 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131502/dd74f16bccd27f446e2009ea550ba79d/1040g00831r1ajlmqno005osulvfpgptv4vea8hg!nc_n_webp_mw_1
+2026-01-13 15:03:12,982 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131502/dd74f16bccd27f446e2009ea550ba79d/1040g00831r1ajlmqno005osulvfpgptv4vea8hg!nc_n_webp_mw_1
+2026-01-13 15:03:13,094 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_002\images\image_05.jpg
+2026-01-13 15:03:13,094 - xhs_crawler - INFO - 下载图片成功: image_05.jpg
+2026-01-13 15:03:13,094 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131502/a970f00c88d2d6b55f99452c6d7d38d9/note_pre_post_uhdr/1040g3r831r3p2li1700g5p4935kkmokdpe1v3b8!nc_n_webp_mw_1
+2026-01-13 15:03:15,243 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131502/a970f00c88d2d6b55f99452c6d7d38d9/note_pre_post_uhdr/1040g3r831r3p2li1700g5p4935kkmokdpe1v3b8!nc_n_webp_mw_1
+2026-01-13 15:03:15,321 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_002\images\image_06.jpg
+2026-01-13 15:03:15,321 - xhs_crawler - INFO - 下载图片成功: image_06.jpg
+2026-01-13 15:03:15,322 - xhs_crawler - ERROR - 更新全局标注文件失败: Expecting value: line 1 column 1 (char 0)
+2026-01-13 15:03:15,322 - xhs_crawler - INFO - 标注文件生成成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_002\annotations.json
+2026-01-13 15:03:15,323 - xhs_crawler - INFO - 连环画保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_002
+2026-01-13 15:03:15,323 - xhs_crawler - INFO - 成功收集连环画 2/3: 奶奶骂了他两句，他就真走了..唉！
+2026-01-13 15:03:15,323 - xhs_crawler - INFO - 处理笔记: 68f8d72c00000000040022cb
+[25644:21844:0113/150315.952:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8E0AA01944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150316.057:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8201A00944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150316.167:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8F00C02944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150316.654:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A880AA01944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150316.772:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A830FE01944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150318.184:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A860FE01944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150318.311:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8E0AA01944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150318.424:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8A0C000944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150319.487:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8B0AA01944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[25644:21844:0113/150319.572:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A800FE01944D0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+等待元素超时: .note-container
+2026-01-13 15:03:35,479 - xhs_parser - INFO - 解析到笔记: ID=68f8d72c00000000040022cb, 标题长度=17, 图片数=20
+2026-01-13 15:03:35,481 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131503/5cc82c066889de2e4a30694ac74fbc49/1040g00831qnidmuqn4005nvta59g971oith2mi0!nc_n_webp_mw_1
+2026-01-13 15:03:37,174 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131503/5cc82c066889de2e4a30694ac74fbc49/1040g00831qnidmuqn4005nvta59g971oith2mi0!nc_n_webp_mw_1
+2026-01-13 15:03:37,198 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_003\images\image_01.jpg
+2026-01-13 15:03:37,198 - xhs_crawler - INFO - 下载图片成功: image_01.jpg
+2026-01-13 15:03:37,198 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131503/f5efeb4383edd5a913c9fa704f18b1f1/1040g00831q651b0mng005o9kj9cgkno5cv506q0!nc_n_webp_mw_1
+2026-01-13 15:03:38,828 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131503/f5efeb4383edd5a913c9fa704f18b1f1/1040g00831q651b0mng005o9kj9cgkno5cv506q0!nc_n_webp_mw_1
+2026-01-13 15:03:38,900 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_003\images\image_02.jpg
+2026-01-13 15:03:38,902 - xhs_crawler - INFO - 下载图片成功: image_02.jpg
+2026-01-13 15:03:38,902 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131503/5f008eb7a7c64a5da49e43e14f22f523/1040g2sg31qcn5idaga705ntstla08nps4hh4n2g!nc_n_webp_mw_1
+2026-01-13 15:03:41,268 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131503/5f008eb7a7c64a5da49e43e14f22f523/1040g2sg31qcn5idaga705ntstla08nps4hh4n2g!nc_n_webp_mw_1
+2026-01-13 15:03:41,298 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_003\images\image_03.jpg
+2026-01-13 15:03:41,299 - xhs_crawler - INFO - 下载图片成功: image_03.jpg
+2026-01-13 15:03:41,299 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131503/c77c85cfd050df7245af8b0f5d5a27d8/1040g2sg31qifjlq4g0e05oao5lknur1seufjbs0!nc_n_webp_mw_1
+2026-01-13 15:03:43,274 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131503/c77c85cfd050df7245af8b0f5d5a27d8/1040g2sg31qifjlq4g0e05oao5lknur1seufjbs0!nc_n_webp_mw_1
+2026-01-13 15:03:43,316 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_003\images\image_04.jpg
+2026-01-13 15:03:43,316 - xhs_crawler - INFO - 下载图片成功: image_04.jpg
+2026-01-13 15:03:43,316 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131503/fb6b30510203f55789b771a2248921c3/spectrum/1040g34o31qul93eun4105nl3m8h08s8v5kkh7b0!nc_n_webp_mw_1
+2026-01-13 15:03:45,731 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131503/fb6b30510203f55789b771a2248921c3/spectrum/1040g34o31qul93eun4105nl3m8h08s8v5kkh7b0!nc_n_webp_mw_1
+2026-01-13 15:03:45,748 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_003\images\image_05.jpg
+2026-01-13 15:03:45,748 - xhs_crawler - INFO - 下载图片成功: image_05.jpg
+2026-01-13 15:03:45,748 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131503/08105b6f51719d641b2982837ee68438/note_pre_post_uhdr/1040g3r031qoea2nk7u005o4bg2608kemd3bbufo!nc_n_webp_mw_1
+2026-01-13 15:03:47,695 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131503/08105b6f51719d641b2982837ee68438/note_pre_post_uhdr/1040g3r031qoea2nk7u005o4bg2608kemd3bbufo!nc_n_webp_mw_1
+2026-01-13 15:03:47,730 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_003\images\image_06.jpg
+2026-01-13 15:03:47,731 - xhs_crawler - INFO - 下载图片成功: image_06.jpg
+2026-01-13 15:03:47,732 - xhs_crawler - ERROR - 更新全局标注文件失败: Expecting value: line 1 column 1 (char 0)
+2026-01-13 15:03:47,732 - xhs_crawler - INFO - 标注文件生成成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_003\annotations.json
+2026-01-13 15:03:47,732 - xhs_crawler - INFO - 连环画保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_003
+2026-01-13 15:03:47,733 - xhs_crawler - INFO - 成功收集连环画 3/3: 下次一定要和好朋友拍这个转场👭👭👭
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\hp\.pyenv\pyenv-win\versions\3.13.0\Lib\logging\__init__.py", line 1153, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'gbk' codec can't encode character '\U0001f46d' in position 74: illegal multibyte sequence
+Call stack:
+  File "d:\1- VS file menu\xiaohongshu\src\main.py", line 188, in <module>
+    main()
+  File "d:\1- VS file menu\xiaohongshu\src\main.py", line 134, in main
+    report = run_simple_crawler(max_comics=max_comics, headless=headless)
+  File "d:\1- VS file menu\xiaohongshu\src\main.py", line 54, in run_simple_crawler
+    report = crawler.crawl()
+  File "D:\1- VS file menu\xiaohongshu\src\crawler\xhs_crawler.py", line 105, in crawl
+    self.search_and_crawl(keyword)
+  File "D:\1- VS file menu\xiaohongshu\src\crawler\xhs_crawler.py", line 181, in search_and_crawl
+    self.process_note(note)
+  File "D:\1- VS file menu\xiaohongshu\src\crawler\xhs_crawler.py", line 217, in process_note
+    self.logger.info(f"成功收集连环画 {len(self.collected_comics)}/{self.max_comics}: {comic_data['title']}")
+Message: '成功收集连环画 3/3: 下次一定要和好朋友拍这个转场👭👭👭'
+Arguments: ()
+2026-01-13 15:03:47,735 - xhs_crawler - INFO - 爬取完成，共收集 3 个连环画
+[27988:24372:0113/150347.778:ERROR:gpu\ipc\client\command_buffer_proxy_impl.cc:321] GPU state invalid after WaitForGetOffsetInRange.
+2026-01-13 15:03:49,955 - request_handler - INFO - 请求处理器已关闭
+2026-01-13 15:03:49,956 - xhs_crawler - INFO - 爬虫已关闭
+2026-01-13 15:03:49,956 - xhs_crawler - INFO - 报告已保存到: D:\1- VS file menu\xiaohongshu\data\processed\comics\crawl_report.json
+2026-01-13 15:04:10,240 - request_handler - INFO - 请求处理器已关闭
+2026-01-13 15:04:10,240 - xhs_crawler - INFO - 爬虫已关闭
+2026-01-13 15:04:10,240 - xhs_crawler - INFO - 爬虫任务完成，收集到 3 个连环画
+
+爬取完成!
+收集到 3 个连环画
+成功率: 300.0%
+
+收集的连环画:
+Traceback (most recent call last):
+  File "d:\1- VS file menu\xiaohongshu\src\main.py", line 188, in <module>
+    main()
+    ~~~~^^
+  File "d:\1- VS file menu\xiaohongshu\src\main.py", line 144, in main
+    print(f"  - {comic['title']} ({comic['images_count']}张图片)")
+                                   ~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'images_count'

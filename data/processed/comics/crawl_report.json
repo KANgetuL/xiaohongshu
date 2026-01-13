@@ -1,18 +1,32 @@
 {
   "stats": {
-    "total_searched": 0,
-    "total_processed": 0,
-    "total_collected": 0,
-    "total_failed": 0,
-    "start_time": "2026-01-13 12:37:09",
-    "end_time": "2026-01-13 12:40:16"
+    "total_found": 0,
+    "total_collected": 3,
+    "start_time": "2026-01-13 15:01:47",
+    "end_time": "2026-01-13 15:03:47"
   },
-  "collected_comics": [],
-  "failed_count": 0,
-  "failed_notes_sample": [],
-  "duration": "0:03:07",
+  "collected_comics": [
+    {
+      "comic_id": "comic_001",
+      "title": "第一个发现这个机位的人一定是个天才！！！",
+      "image_count": 6,
+      "create_time": "2026-01-13 15:02:31"
+    },
+    {
+      "comic_id": "comic_002",
+      "title": "奶奶骂了他两句，他就真走了..唉！",
+      "image_count": 6,
+      "create_time": "2026-01-13 15:03:02"
+    },
+    {
+      "comic_id": "comic_003",
+      "title": "下次一定要和好朋友拍这个转场👭👭👭",
+      "image_count": 6,
+      "create_time": "2026-01-13 15:03:35"
+    }
+  ],
   "summary": {
-    "success_rate": 0.0,
-    "status": "NO_DATA"
+    "success_rate": 300.0,
+    "status": "completed"
   }
 }

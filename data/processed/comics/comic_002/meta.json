@@ -1,0 +1,57 @@
+{
+  "comic_id": "comic_002",
+  "note_id": "69460e03000000001f00d82d",
+  "title": "奶奶骂了他两句，他就真走了..唉！",
+  "content": "奶奶骂了他两句，他就真走了..唉！大郎酱4.8万",
+  "original_url": "https://www.xiaohongshu.com/explore/69460e03000000001f00d82d",
+  "tags": [
+    "外卖",
+    "点餐",
+    "翻车",
+    "吃啥",
+    "漫画"
+  ],
+  "images": [
+    {
+      "filename": "image_01.jpg",
+      "path": "comic_002\\images\\image_01.jpg",
+      "order": 1,
+      "original_url": "https://sns-webpic-qc.xhscdn.com/202601131502/ee0222adc4417e916b5ff5696a5af3d9/1040g00831qv40vidng005q99d2acjpk3j1tl84g!nc_n_webp_mw_1"
+    },
+    {
+      "filename": "image_02.jpg",
+      "path": "comic_002\\images\\image_02.jpg",
+      "order": 2,
+      "original_url": "https://sns-webpic-qc.xhscdn.com/202601131502/0af008c4c7ddc51ec3cc31bcf8ac90ae/1040g00831qm14e3a7g005p7mijchmfvmktlktio!nc_n_webp_mw_1"
+    },
+    {
+      "filename": "image_03.jpg",
+      "path": "comic_002\\images\\image_03.jpg",
+      "order": 3,
+      "original_url": "https://sns-webpic-qc.xhscdn.com/202601131502/ff61af18329020f14d22866ae8cb404d/1040g00831q7h0lednu6g5pae9ga0i8amotlfv18!nc_n_webp_mw_1"
+    },
+    {
+      "filename": "image_04.jpg",
+      "path": "comic_002\\images\\image_04.jpg",
+      "order": 4,
+      "original_url": "https://sns-webpic-qc.xhscdn.com/202601131502/cfcfad0f4770882b0c777afb0dc04480/1040g2sg31q43rpjpg0705onaie3noulgj08fi9o!nc_n_webp_mw_1"
+    },
+    {
+      "filename": "image_05.jpg",
+      "path": "comic_002\\images\\image_05.jpg",
+      "order": 5,
+      "original_url": "https://sns-webpic-qc.xhscdn.com/202601131502/dd74f16bccd27f446e2009ea550ba79d/1040g00831r1ajlmqno005osulvfpgptv4vea8hg!nc_n_webp_mw_1"
+    },
+    {
+      "filename": "image_06.jpg",
+      "path": "comic_002\\images\\image_06.jpg",
+      "order": 6,
+      "original_url": "https://sns-webpic-qc.xhscdn.com/202601131502/a970f00c88d2d6b55f99452c6d7d38d9/note_pre_post_uhdr/1040g3r831r3p2li1700g5p4935kkmokdpe1v3b8!nc_n_webp_mw_1"
+    }
+  ],
+  "create_time": "2026-01-13 15:03:02",
+  "image_count": 20,
+  "username": "大郎酱",
+  "likes": 0,
+  "downloaded_image_count": 6
+}

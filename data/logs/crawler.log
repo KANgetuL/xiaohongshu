@@ -261,3 +261,116 @@
 2026-01-13 13:08:04,553 - simple_xhs_crawler - INFO - 搜索关键词: 外卖漫画
 2026-01-13 13:08:04,553 - selenium_handler - INFO - 直接访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E5%A4%96%E5%8D%96%E6%BC%AB%E7%94%BB
 2026-01-13 13:08:09,757 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
+2026-01-13 15:01:32,938 - xhs_crawler - INFO - 项目初始化完成
+2026-01-13 15:01:47,543 - xhs_crawler - INFO - 开始执行简化版爬虫任务
+2026-01-13 15:01:47,543 - xhs_crawler - INFO - 开始爬取流程
+2026-01-13 15:01:52,053 - xhs_crawler - INFO - 所有组件初始化成功
+2026-01-13 15:01:52,053 - xhs_crawler - INFO - 开始登录小红书...
+2026-01-13 15:02:01,728 - xhs_crawler - INFO - 搜索关键词: ['外卖翻车', '点餐翻车', '外卖漫画', '点餐漫画']
+2026-01-13 15:02:01,728 - xhs_crawler - INFO - 处理关键词: 外卖翻车
+2026-01-13 15:02:01,728 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E5%A4%96%E5%8D%96%E7%BF%BB%E8%BD%A6
+2026-01-13 15:02:08,675 - xhs_parser - INFO - 总共找到 59 个候选元素
+2026-01-13 15:02:08,676 - xhs_parser - INFO - 成功解析 0 个笔记
+2026-01-13 15:02:08,676 - xhs_crawler - INFO - 解析到 0 个笔记
+2026-01-13 15:02:08,676 - xhs_crawler - WARNING - 未找到关键词'外卖翻车'的笔记
+2026-01-13 15:02:08,676 - xhs_crawler - INFO - 处理关键词: 点餐翻车
+2026-01-13 15:02:08,676 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E7%82%B9%E9%A4%90%E7%BF%BB%E8%BD%A6
+2026-01-13 15:02:15,865 - xhs_parser - INFO - 总共找到 48 个候选元素
+2026-01-13 15:02:15,869 - xhs_parser - INFO - 成功解析 6 个笔记
+2026-01-13 15:02:15,870 - xhs_crawler - INFO - 解析到 6 个笔记
+2026-01-13 15:02:15,870 - xhs_crawler - INFO - 处理笔记: 68453b25000000000f03aaa6
+2026-01-13 15:02:31,825 - xhs_parser - INFO - 解析到笔记: ID=68453b25000000000f03aaa6, 标题长度=20, 图片数=20
+2026-01-13 15:02:31,826 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131502/07f6b6a5f0a6b57ecc8bf19a01fec2e4/1040g00831q42pce17oe05n8q6vg4ermcc58u1e0!nc_n_webp_mw_1
+2026-01-13 15:02:34,260 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131502/07f6b6a5f0a6b57ecc8bf19a01fec2e4/1040g00831q42pce17oe05n8q6vg4ermcc58u1e0!nc_n_webp_mw_1
+2026-01-13 15:02:34,513 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_001\images\image_01.jpg
+2026-01-13 15:02:34,513 - xhs_crawler - INFO - 下载图片成功: image_01.jpg
+2026-01-13 15:02:34,513 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131502/4ab727eff7b144e4a89afb27b1747fbf/1040g00831r5n4iq47o0047sp0i19mlmdfididfo!nc_n_webp_mw_1
+2026-01-13 15:02:36,964 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131502/4ab727eff7b144e4a89afb27b1747fbf/1040g00831r5n4iq47o0047sp0i19mlmdfididfo!nc_n_webp_mw_1
+2026-01-13 15:02:36,982 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_001\images\image_02.jpg
+2026-01-13 15:02:36,983 - xhs_crawler - INFO - 下载图片成功: image_02.jpg
+2026-01-13 15:02:36,983 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131502/c3b01271c7df7906fd45b18e4a3c547c/1040g2sg31quvv4sr7ge05pae9ga0i8amk95pl8o!nc_n_webp_mw_1
+2026-01-13 15:02:39,448 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131502/c3b01271c7df7906fd45b18e4a3c547c/1040g2sg31quvv4sr7ge05pae9ga0i8amk95pl8o!nc_n_webp_mw_1
+2026-01-13 15:02:39,487 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_001\images\image_03.jpg
+2026-01-13 15:02:39,488 - xhs_crawler - INFO - 下载图片成功: image_03.jpg
+2026-01-13 15:02:39,488 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131502/632f6076c736b839b4a2c0d7496a62f4/1040g00831ql1mem600005n25n7akf3r1ovaqjuo!nc_n_webp_mw_1
+2026-01-13 15:02:41,373 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131502/632f6076c736b839b4a2c0d7496a62f4/1040g00831ql1mem600005n25n7akf3r1ovaqjuo!nc_n_webp_mw_1
+2026-01-13 15:02:41,418 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_001\images\image_04.jpg
+2026-01-13 15:02:41,418 - xhs_crawler - INFO - 下载图片成功: image_04.jpg
+2026-01-13 15:02:41,418 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131502/ec8ae49ed2c72778ce4c27498811ea67/1040g00831r4h56qt74005pd0dvpo3t0toabetm0!nc_n_webp_mw_1
+2026-01-13 15:02:43,135 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131502/ec8ae49ed2c72778ce4c27498811ea67/1040g00831r4h56qt74005pd0dvpo3t0toabetm0!nc_n_webp_mw_1
+2026-01-13 15:02:43,147 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_001\images\image_05.jpg
+2026-01-13 15:02:43,147 - xhs_crawler - INFO - 下载图片成功: image_05.jpg
+2026-01-13 15:02:43,147 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131502/64164bb8c6a1c0ce90e5ed6629fb7d86/notes_pre_post/1040g3k831qd4mnkp0a005nsdaiggbq0ic9g1meg!nc_n_webp_mw_1
+2026-01-13 15:02:45,163 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131502/64164bb8c6a1c0ce90e5ed6629fb7d86/notes_pre_post/1040g3k831qd4mnkp0a005nsdaiggbq0ic9g1meg!nc_n_webp_mw_1
+2026-01-13 15:02:45,198 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_001\images\image_06.jpg
+2026-01-13 15:02:45,199 - xhs_crawler - INFO - 下载图片成功: image_06.jpg
+2026-01-13 15:02:45,201 - xhs_crawler - ERROR - 更新全局标注文件失败: Expecting value: line 1 column 1 (char 0)
+2026-01-13 15:02:45,202 - xhs_crawler - INFO - 标注文件生成成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_001\annotations.json
+2026-01-13 15:02:45,202 - xhs_crawler - INFO - 连环画保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_001
+2026-01-13 15:02:45,202 - xhs_crawler - INFO - 成功收集连环画 1/3: 第一个发现这个机位的人一定是个天才！！！
+2026-01-13 15:02:45,202 - xhs_crawler - INFO - 处理笔记: 69460e03000000001f00d82d
+2026-01-13 15:03:02,647 - xhs_parser - INFO - 解析到笔记: ID=69460e03000000001f00d82d, 标题长度=17, 图片数=20
+2026-01-13 15:03:02,648 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131502/ee0222adc4417e916b5ff5696a5af3d9/1040g00831qv40vidng005q99d2acjpk3j1tl84g!nc_n_webp_mw_1
+2026-01-13 15:03:04,536 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131502/ee0222adc4417e916b5ff5696a5af3d9/1040g00831qv40vidng005q99d2acjpk3j1tl84g!nc_n_webp_mw_1
+2026-01-13 15:03:04,554 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_002\images\image_01.jpg
+2026-01-13 15:03:04,555 - xhs_crawler - INFO - 下载图片成功: image_01.jpg
+2026-01-13 15:03:04,555 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131502/0af008c4c7ddc51ec3cc31bcf8ac90ae/1040g00831qm14e3a7g005p7mijchmfvmktlktio!nc_n_webp_mw_1
+2026-01-13 15:03:06,570 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131502/0af008c4c7ddc51ec3cc31bcf8ac90ae/1040g00831qm14e3a7g005p7mijchmfvmktlktio!nc_n_webp_mw_1
+2026-01-13 15:03:06,605 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_002\images\image_02.jpg
+2026-01-13 15:03:06,605 - xhs_crawler - INFO - 下载图片成功: image_02.jpg
+2026-01-13 15:03:06,605 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131502/ff61af18329020f14d22866ae8cb404d/1040g00831q7h0lednu6g5pae9ga0i8amotlfv18!nc_n_webp_mw_1
+2026-01-13 15:03:08,616 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131502/ff61af18329020f14d22866ae8cb404d/1040g00831q7h0lednu6g5pae9ga0i8amotlfv18!nc_n_webp_mw_1
+2026-01-13 15:03:08,646 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_002\images\image_03.jpg
+2026-01-13 15:03:08,646 - xhs_crawler - INFO - 下载图片成功: image_03.jpg
+2026-01-13 15:03:08,646 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131502/cfcfad0f4770882b0c777afb0dc04480/1040g2sg31q43rpjpg0705onaie3noulgj08fi9o!nc_n_webp_mw_1
+2026-01-13 15:03:10,685 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131502/cfcfad0f4770882b0c777afb0dc04480/1040g2sg31q43rpjpg0705onaie3noulgj08fi9o!nc_n_webp_mw_1
+2026-01-13 15:03:10,699 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_002\images\image_04.jpg
+2026-01-13 15:03:10,699 - xhs_crawler - INFO - 下载图片成功: image_04.jpg
+2026-01-13 15:03:10,699 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131502/dd74f16bccd27f446e2009ea550ba79d/1040g00831r1ajlmqno005osulvfpgptv4vea8hg!nc_n_webp_mw_1
+2026-01-13 15:03:12,982 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131502/dd74f16bccd27f446e2009ea550ba79d/1040g00831r1ajlmqno005osulvfpgptv4vea8hg!nc_n_webp_mw_1
+2026-01-13 15:03:13,094 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_002\images\image_05.jpg
+2026-01-13 15:03:13,094 - xhs_crawler - INFO - 下载图片成功: image_05.jpg
+2026-01-13 15:03:13,094 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131502/a970f00c88d2d6b55f99452c6d7d38d9/note_pre_post_uhdr/1040g3r831r3p2li1700g5p4935kkmokdpe1v3b8!nc_n_webp_mw_1
+2026-01-13 15:03:15,243 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131502/a970f00c88d2d6b55f99452c6d7d38d9/note_pre_post_uhdr/1040g3r831r3p2li1700g5p4935kkmokdpe1v3b8!nc_n_webp_mw_1
+2026-01-13 15:03:15,321 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_002\images\image_06.jpg
+2026-01-13 15:03:15,321 - xhs_crawler - INFO - 下载图片成功: image_06.jpg
+2026-01-13 15:03:15,322 - xhs_crawler - ERROR - 更新全局标注文件失败: Expecting value: line 1 column 1 (char 0)
+2026-01-13 15:03:15,322 - xhs_crawler - INFO - 标注文件生成成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_002\annotations.json
+2026-01-13 15:03:15,323 - xhs_crawler - INFO - 连环画保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_002
+2026-01-13 15:03:15,323 - xhs_crawler - INFO - 成功收集连环画 2/3: 奶奶骂了他两句，他就真走了..唉！
+2026-01-13 15:03:15,323 - xhs_crawler - INFO - 处理笔记: 68f8d72c00000000040022cb
+2026-01-13 15:03:35,479 - xhs_parser - INFO - 解析到笔记: ID=68f8d72c00000000040022cb, 标题长度=17, 图片数=20
+2026-01-13 15:03:35,481 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131503/5cc82c066889de2e4a30694ac74fbc49/1040g00831qnidmuqn4005nvta59g971oith2mi0!nc_n_webp_mw_1
+2026-01-13 15:03:37,174 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131503/5cc82c066889de2e4a30694ac74fbc49/1040g00831qnidmuqn4005nvta59g971oith2mi0!nc_n_webp_mw_1
+2026-01-13 15:03:37,198 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_003\images\image_01.jpg
+2026-01-13 15:03:37,198 - xhs_crawler - INFO - 下载图片成功: image_01.jpg
+2026-01-13 15:03:37,198 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131503/f5efeb4383edd5a913c9fa704f18b1f1/1040g00831q651b0mng005o9kj9cgkno5cv506q0!nc_n_webp_mw_1
+2026-01-13 15:03:38,828 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131503/f5efeb4383edd5a913c9fa704f18b1f1/1040g00831q651b0mng005o9kj9cgkno5cv506q0!nc_n_webp_mw_1
+2026-01-13 15:03:38,900 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_003\images\image_02.jpg
+2026-01-13 15:03:38,902 - xhs_crawler - INFO - 下载图片成功: image_02.jpg
+2026-01-13 15:03:38,902 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131503/5f008eb7a7c64a5da49e43e14f22f523/1040g2sg31qcn5idaga705ntstla08nps4hh4n2g!nc_n_webp_mw_1
+2026-01-13 15:03:41,268 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131503/5f008eb7a7c64a5da49e43e14f22f523/1040g2sg31qcn5idaga705ntstla08nps4hh4n2g!nc_n_webp_mw_1
+2026-01-13 15:03:41,298 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_003\images\image_03.jpg
+2026-01-13 15:03:41,299 - xhs_crawler - INFO - 下载图片成功: image_03.jpg
+2026-01-13 15:03:41,299 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131503/c77c85cfd050df7245af8b0f5d5a27d8/1040g2sg31qifjlq4g0e05oao5lknur1seufjbs0!nc_n_webp_mw_1
+2026-01-13 15:03:43,274 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131503/c77c85cfd050df7245af8b0f5d5a27d8/1040g2sg31qifjlq4g0e05oao5lknur1seufjbs0!nc_n_webp_mw_1
+2026-01-13 15:03:43,316 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_003\images\image_04.jpg
+2026-01-13 15:03:43,316 - xhs_crawler - INFO - 下载图片成功: image_04.jpg
+2026-01-13 15:03:43,316 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131503/fb6b30510203f55789b771a2248921c3/spectrum/1040g34o31qul93eun4105nl3m8h08s8v5kkh7b0!nc_n_webp_mw_1
+2026-01-13 15:03:45,731 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131503/fb6b30510203f55789b771a2248921c3/spectrum/1040g34o31qul93eun4105nl3m8h08s8v5kkh7b0!nc_n_webp_mw_1
+2026-01-13 15:03:45,748 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_003\images\image_05.jpg
+2026-01-13 15:03:45,748 - xhs_crawler - INFO - 下载图片成功: image_05.jpg
+2026-01-13 15:03:45,748 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131503/08105b6f51719d641b2982837ee68438/note_pre_post_uhdr/1040g3r031qoea2nk7u005o4bg2608kemd3bbufo!nc_n_webp_mw_1
+2026-01-13 15:03:47,695 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131503/08105b6f51719d641b2982837ee68438/note_pre_post_uhdr/1040g3r031qoea2nk7u005o4bg2608kemd3bbufo!nc_n_webp_mw_1
+2026-01-13 15:03:47,730 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_003\images\image_06.jpg
+2026-01-13 15:03:47,731 - xhs_crawler - INFO - 下载图片成功: image_06.jpg
+2026-01-13 15:03:47,732 - xhs_crawler - ERROR - 更新全局标注文件失败: Expecting value: line 1 column 1 (char 0)
+2026-01-13 15:03:47,732 - xhs_crawler - INFO - 标注文件生成成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_003\annotations.json
+2026-01-13 15:03:47,732 - xhs_crawler - INFO - 连环画保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_003
+2026-01-13 15:03:47,735 - xhs_crawler - INFO - 爬取完成，共收集 3 个连环画
+2026-01-13 15:03:49,955 - request_handler - INFO - 请求处理器已关闭
+2026-01-13 15:03:49,956 - xhs_crawler - INFO - 爬虫已关闭
+2026-01-13 15:03:49,956 - xhs_crawler - INFO - 报告已保存到: D:\1- VS file menu\xiaohongshu\data\processed\comics\crawl_report.json
+2026-01-13 15:04:10,240 - request_handler - INFO - 请求处理器已关闭
+2026-01-13 15:04:10,240 - xhs_crawler - INFO - 爬虫已关闭
+2026-01-13 15:04:10,240 - xhs_crawler - INFO - 爬虫任务完成，收集到 3 个连环画
