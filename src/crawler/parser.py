@@ -63,7 +63,16 @@ class XHSParser:
             
             # 尝试不同的提取方法
             for element in unique_elements[:50]:  # 限制处理数量
-                note_info = self._extract_note_from_element(element)
+                # 尝试多种提取方法
+                note_info = None
+                
+                # 方法1: 新方法
+                note_info = self._extract_note_from_element_v2(element)
+                
+                # 方法2: 如果新方法失败，尝试旧方法
+                if not note_info:
+                    note_info = self._extract_note_from_element(element)
+                
                 if note_info and self._validate_note_info(note_info):
                     # 关键词过滤：确保笔记内容与关键词相关
                     if self._is_related_to_keyword(note_info, keyword):
@@ -111,7 +120,114 @@ class XHSParser:
             if kw in all_text:
                 return True
         
-        return False    
+        return False
+
+    def _extract_note_from_element(self, element) -> Optional[Dict[str, Any]]:
+        """
+        从元素中提取笔记信息（兼容旧版本）
+        
+        Args:
+            element: BeautifulSoup元素
+            
+        Returns:
+            笔记信息字典
+        """
+        try:
+            note_info = {}
+            
+            # 1. 提取笔记ID和URL
+            note_id = None
+            note_url = None
+            
+            # 查找包含/explore/的链接
+            links = element.find_all('a', href=True)
+            for link in links:
+                href = link['href']
+                if '/explore/' in href:
+                    # 提取笔记ID
+                    match = re.search(r'/explore/([a-f0-9]+)', href)
+                    if match:
+                        note_id = match.group(1)
+                        note_url = urljoin('https://www.xiaohongshu.com', href)
+                        break
+            
+            if not note_id:
+                # 尝试从其他属性提取
+                if element.has_attr('data-note-id'):
+                    note_id = element['data-note-id']
+                elif element.has_attr('data-id'):
+                    data_id = element['data-id']
+                    if len(data_id) == 24:  # 小红书笔记ID通常是24位十六进制
+                        note_id = data_id
+            
+            if not note_id:
+                return None
+            
+            note_info['note_id'] = note_id
+            note_info['url'] = note_url or f"https://www.xiaohongshu.com/explore/{note_id}"
+            
+            # 2. 提取标题和描述
+            text_elements = element.find_all(['h1', 'h2', 'h3', 'h4', 'p', 'div', 'span'])
+            texts = []
+            for elem in text_elements:
+                text = elem.get_text(strip=True)
+                if text and len(text) > 5 and len(text) < 200:
+                    texts.append(text)
+            
+            if texts:
+                # 取最长的文本作为标题
+                note_info['title'] = max(texts, key=len)
+                
+                # 所有文本作为内容
+                note_info['content'] = ' '.join(texts[:3])  # 只取前3个
+            
+            # 3. 提取封面图片
+            img_elements = element.find_all('img', src=True)
+            for img in img_elements:
+                src = img.get('src')
+                if src and 'http' in src:
+                    # 过滤小图标
+                    if any(x in src.lower() for x in ['icon', 'avatar', 'logo', 'default']):
+                        continue
+                    
+                    # 确保URL完整
+                    if src.startswith('//'):
+                        src = 'https:' + src
+                    elif src.startswith('/'):
+                        src = urljoin('https://www.xiaohongshu.com', src)
+                    
+                    note_info['cover_url'] = src
+                    break
+            
+            # 4. 提取用户信息
+            user_elements = element.find_all(['div', 'span'], class_=re.compile(r'user|author|name'))
+            for user_elem in user_elements:
+                text = user_elem.get_text(strip=True)
+                if text and 2 <= len(text) <= 20:
+                    note_info['username'] = text
+                    break
+            
+            # 5. 提取标签
+            tags = []
+            tag_elements = element.find_all(['a', 'span'], class_=re.compile(r'tag|topic|label'))
+            for tag_elem in tag_elements:
+                tag_text = tag_elem.get_text(strip=True)
+                if tag_text and tag_text.startswith('#'):
+                    tags.append(tag_text[1:])  # 去掉#号
+            
+            # 从文本中提取标签
+            all_text = element.get_text()
+            hash_tags = re.findall(r'#([^#\s]+)', all_text)
+            tags.extend(hash_tags[:5])  # 最多取5个
+            
+            note_info['tags'] = list(set(tags))
+            
+            return note_info
+            
+        except Exception as e:
+            self.logger.debug(f"提取笔记信息失败: {str(e)}")
+            return None
+
     def _extract_note_from_element_v2(self, element) -> Optional[Dict[str, Any]]:
         """
         备用方法提取笔记信息
@@ -463,6 +579,37 @@ class XHSParser:
             self.logger.debug(f"从HTML解析数据失败: {str(e)}")
         
         return result
+    
+
+    def parse_search_results_simple(self, page_source: str, keyword: str) -> List[Dict[str, Any]]:
+        """
+        简单方法解析搜索结果 - 只提取笔记ID
+        """
+        notes = []
+        
+        try:
+            # 使用正则直接提取笔记ID
+            note_ids = re.findall(r'/explore/([a-f0-9]{24})', page_source)
+            note_ids = list(set(note_ids))  # 去重
+            
+            for note_id in note_ids[:20]:  # 最多20个
+                note_info = {
+                    'note_id': note_id,
+                    'url': f"https://www.xiaohongshu.com/explore/{note_id}",
+                    'title': f"笔记 {note_id}",
+                    'content': f"从搜索 '{keyword}' 找到的笔记",
+                    'tags': [keyword],
+                    'search_keyword': keyword
+                }
+                notes.append(note_info)
+            
+            self.logger.info(f"简单方法解析到 {len(notes)} 个笔记ID")
+            
+        except Exception as e:
+            self.logger.error(f"简单方法解析失败: {str(e)}")
+        
+        return notes
+
     
     def _extract_images_from_html(self, soup) -> List[Dict[str, Any]]:
         """从HTML中提取图片信息"""
