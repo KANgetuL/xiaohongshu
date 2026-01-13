@@ -197,6 +197,13 @@ class SimpleXHSCrawler:
                 
                 # 获取页面源码
                 page_source = self.selenium_handler.driver.page_source
+                # 方法1: 主解析方法
+                notes = self.parser.parse_search_results_direct(page_source, keyword)
+    
+                # 方法2: 如果主方法失败，使用简单方法
+                if not notes:
+                    self.logger.warning("主解析方法失败，尝试简单方法...")
+                    notes = self.parser.parse_search_results_simple(page_source, keyword)
                 
                 # 保存页面源码用于调试
                 self._save_page_for_debug(page_source, keyword)
