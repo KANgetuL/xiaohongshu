@@ -1,0 +1,263 @@
+2026-01-13 12:05:06,283 - xhs_crawler - INFO - 项目初始化完成
+2026-01-13 12:05:06,285 - xhs_crawler - INFO - 目标主题: 外卖/点餐翻车
+2026-01-13 12:05:06,285 - xhs_crawler - INFO - 数据存储路径: {'max_comics_per_theme': 100, 'images_per_comic': 6, 'batch_size': 10}
+2026-01-13 12:05:06,286 - xhs_crawler - INFO - 项目启动完成
+2026-01-13 12:14:58,471 - test - INFO - 开始测试爬虫模块
+2026-01-13 12:15:00,251 - request_handler - INFO - 发送GET请求到: https://www.baidu.com
+2026-01-13 12:15:00,540 - request_handler - INFO - 请求处理器已关闭
+2026-01-13 12:15:00,545 - test - INFO - 测试完成
+2026-01-13 12:15:25,704 - xhs_crawler - INFO - 项目初始化完成
+2026-01-13 12:15:43,014 - xhs_crawler - INFO - 开始执行爬虫任务
+2026-01-13 12:15:43,015 - xhs_crawler - INFO - 开始爬取小红书连环画
+2026-01-13 12:15:43,016 - xhs_crawler - INFO - 使用关键词搜索: 外卖翻车
+2026-01-13 12:15:43,016 - xhs_crawler - INFO - 搜索关键词: 外卖翻车, 第1页
+2026-01-13 12:15:45,269 - request_handler - INFO - 发送GET请求到: https://www.xiaohongshu.com/fe_api/burdock/weixin/v2/search/notes
+2026-01-13 12:15:45,631 - request_handler - WARNING - 请求失败，状态码: 404: https://www.xiaohongshu.com/fe_api/burdock/weixin/v2/search/notes
+2026-01-13 12:15:45,631 - xhs_crawler - ERROR - 搜索失败: 请求失败，状态码: 404
+2026-01-13 12:15:45,631 - xhs_crawler - INFO - 使用关键词搜索: 点餐翻车
+2026-01-13 12:15:45,631 - xhs_crawler - INFO - 搜索关键词: 点餐翻车, 第1页
+2026-01-13 12:15:47,565 - request_handler - INFO - 发送GET请求到: https://www.xiaohongshu.com/fe_api/burdock/weixin/v2/search/notes
+2026-01-13 12:15:47,621 - request_handler - WARNING - 请求失败，状态码: 404: https://www.xiaohongshu.com/fe_api/burdock/weixin/v2/search/notes
+2026-01-13 12:15:47,621 - xhs_crawler - ERROR - 搜索失败: 请求失败，状态码: 404
+2026-01-13 12:15:47,621 - xhs_crawler - INFO - 使用关键词搜索: 外卖漫画
+2026-01-13 12:15:47,622 - xhs_crawler - INFO - 搜索关键词: 外卖漫画, 第1页
+2026-01-13 12:15:49,768 - request_handler - INFO - 发送GET请求到: https://www.xiaohongshu.com/fe_api/burdock/weixin/v2/search/notes
+2026-01-13 12:15:49,823 - request_handler - WARNING - 请求失败，状态码: 404: https://www.xiaohongshu.com/fe_api/burdock/weixin/v2/search/notes
+2026-01-13 12:15:49,823 - xhs_crawler - ERROR - 搜索失败: 请求失败，状态码: 404
+2026-01-13 12:15:49,824 - xhs_crawler - INFO - 使用关键词搜索: 点餐漫画
+2026-01-13 12:15:49,824 - xhs_crawler - INFO - 搜索关键词: 点餐漫画, 第1页
+2026-01-13 12:15:51,665 - request_handler - INFO - 发送GET请求到: https://www.xiaohongshu.com/fe_api/burdock/weixin/v2/search/notes
+2026-01-13 12:15:51,977 - request_handler - WARNING - 请求失败，状态码: 404: https://www.xiaohongshu.com/fe_api/burdock/weixin/v2/search/notes
+2026-01-13 12:15:51,977 - xhs_crawler - ERROR - 搜索失败: 请求失败，状态码: 404
+2026-01-13 12:15:51,984 - xhs_crawler - INFO - 爬取完成
+2026-01-13 12:15:51,985 - xhs_crawler - INFO - 爬取报告保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\crawl_report.json
+2026-01-13 12:15:51,985 - xhs_crawler - INFO - 爬取统计:
+2026-01-13 12:15:51,986 - xhs_crawler - INFO -   搜索笔记数: 0
+2026-01-13 12:15:51,986 - xhs_crawler - INFO -   处理笔记数: 0
+2026-01-13 12:15:51,986 - xhs_crawler - INFO -   收集连环画: 0
+2026-01-13 12:15:51,986 - xhs_crawler - INFO -   失败笔记数: 0
+2026-01-13 12:15:51,986 - xhs_crawler - INFO -   成功率: 0.0%
+2026-01-13 12:15:51,986 - xhs_crawler - INFO -   爬取时长: 0:00:08
+2026-01-13 12:15:51,988 - request_handler - INFO - 请求处理器已关闭
+2026-01-13 12:15:51,988 - xhs_crawler - INFO - 爬虫已关闭
+2026-01-13 12:15:51,988 - xhs_crawler - INFO - 爬虫任务完成，收集到 0 个连环画
+2026-01-13 12:16:27,081 - test - INFO - 开始测试爬虫模块
+2026-01-13 12:16:28,745 - request_handler - INFO - 发送GET请求到: https://www.baidu.com
+2026-01-13 12:16:29,013 - request_handler - INFO - 请求处理器已关闭
+2026-01-13 12:16:29,015 - test - INFO - 测试完成
+2026-01-13 12:18:00,266 - xhs_crawler - INFO - 项目初始化完成
+2026-01-13 12:18:05,850 - xhs_crawler - INFO - 开始执行爬虫任务
+2026-01-13 12:18:05,851 - xhs_crawler - INFO - 开始爬取小红书连环画
+2026-01-13 12:18:05,852 - xhs_crawler - INFO - 使用关键词搜索: 外卖翻车
+2026-01-13 12:18:05,852 - xhs_crawler - INFO - 搜索关键词: 外卖翻车, 第1页
+2026-01-13 12:18:08,103 - request_handler - INFO - 发送GET请求到: https://www.xiaohongshu.com/fe_api/burdock/weixin/v2/search/notes
+2026-01-13 12:18:08,435 - request_handler - WARNING - 请求失败，状态码: 404: https://www.xiaohongshu.com/fe_api/burdock/weixin/v2/search/notes
+2026-01-13 12:18:08,435 - xhs_crawler - ERROR - 搜索失败: 请求失败，状态码: 404
+2026-01-13 12:18:08,435 - xhs_crawler - INFO - 使用关键词搜索: 点餐翻车
+2026-01-13 12:18:08,435 - xhs_crawler - INFO - 搜索关键词: 点餐翻车, 第1页
+2026-01-13 12:18:10,909 - request_handler - INFO - 发送GET请求到: https://www.xiaohongshu.com/fe_api/burdock/weixin/v2/search/notes
+2026-01-13 12:18:10,967 - request_handler - WARNING - 请求失败，状态码: 404: https://www.xiaohongshu.com/fe_api/burdock/weixin/v2/search/notes
+2026-01-13 12:18:10,967 - xhs_crawler - ERROR - 搜索失败: 请求失败，状态码: 404
+2026-01-13 12:18:10,967 - xhs_crawler - INFO - 使用关键词搜索: 外卖漫画
+2026-01-13 12:18:10,967 - xhs_crawler - INFO - 搜索关键词: 外卖漫画, 第1页
+2026-01-13 12:18:13,103 - request_handler - INFO - 发送GET请求到: https://www.xiaohongshu.com/fe_api/burdock/weixin/v2/search/notes
+2026-01-13 12:18:13,157 - request_handler - WARNING - 请求失败，状态码: 404: https://www.xiaohongshu.com/fe_api/burdock/weixin/v2/search/notes
+2026-01-13 12:18:13,158 - xhs_crawler - ERROR - 搜索失败: 请求失败，状态码: 404
+2026-01-13 12:18:13,158 - xhs_crawler - INFO - 使用关键词搜索: 点餐漫画
+2026-01-13 12:18:13,158 - xhs_crawler - INFO - 搜索关键词: 点餐漫画, 第1页
+2026-01-13 12:18:15,254 - request_handler - INFO - 发送GET请求到: https://www.xiaohongshu.com/fe_api/burdock/weixin/v2/search/notes
+2026-01-13 12:18:15,312 - request_handler - WARNING - 请求失败，状态码: 404: https://www.xiaohongshu.com/fe_api/burdock/weixin/v2/search/notes
+2026-01-13 12:18:15,312 - xhs_crawler - ERROR - 搜索失败: 请求失败，状态码: 404
+2026-01-13 12:18:15,313 - xhs_crawler - INFO - 爬取完成
+2026-01-13 12:18:15,314 - xhs_crawler - INFO - 爬取报告保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\crawl_report.json
+2026-01-13 12:18:15,314 - xhs_crawler - INFO - 爬取统计:
+2026-01-13 12:18:15,314 - xhs_crawler - INFO -   搜索笔记数: 0
+2026-01-13 12:18:15,314 - xhs_crawler - INFO -   处理笔记数: 0
+2026-01-13 12:18:15,314 - xhs_crawler - INFO -   收集连环画: 0
+2026-01-13 12:18:15,314 - xhs_crawler - INFO -   失败笔记数: 0
+2026-01-13 12:18:15,314 - xhs_crawler - INFO -   成功率: 0.0%
+2026-01-13 12:18:15,315 - xhs_crawler - INFO -   爬取时长: 0:00:10
+2026-01-13 12:18:15,315 - request_handler - INFO - 请求处理器已关闭
+2026-01-13 12:18:15,316 - xhs_crawler - INFO - 爬虫已关闭
+2026-01-13 12:18:15,316 - xhs_crawler - INFO - 爬虫任务完成，收集到 0 个连环画
+2026-01-13 12:34:46,100 - selenium_handler - INFO - Selenium浏览器初始化成功: chrome
+2026-01-13 12:34:46,100 - selenium_handler - INFO - 访问页面: https://www.baidu.com
+2026-01-13 12:34:47,424 - selenium_handler - INFO - 提取到 1 张图片
+2026-01-13 12:35:13,465 - selenium_handler - INFO - 浏览器已关闭
+2026-01-13 12:35:44,041 - selenium_handler - INFO - Selenium浏览器初始化成功: chrome
+2026-01-13 12:35:44,041 - selenium_handler - INFO - 访问页面: https://www.baidu.com
+2026-01-13 12:35:45,313 - selenium_handler - INFO - 提取到 1 张图片
+2026-01-13 12:36:03,323 - selenium_handler - INFO - 浏览器已关闭
+2026-01-13 12:36:48,827 - xhs_crawler - INFO - 项目初始化完成
+2026-01-13 12:37:05,344 - xhs_crawler - INFO - 开始执行Selenium爬虫任务
+2026-01-13 12:37:09,833 - selenium_handler - INFO - Selenium浏览器初始化成功: chrome
+2026-01-13 12:37:09,834 - xhs_selenium_crawler - INFO - 开始使用Selenium爬取小红书连环画
+2026-01-13 12:37:09,834 - xhs_selenium_crawler - INFO - 使用关键词搜索: 外卖翻车
+2026-01-13 12:37:09,834 - xhs_selenium_crawler - INFO - 使用Selenium搜索关键词: 外卖翻车
+2026-01-13 12:37:35,289 - selenium_handler - WARNING - 等待元素超时: css selector=input[placeholder='搜索']
+2026-01-13 12:37:56,363 - selenium_handler - WARNING - 等待元素超时: css selector=input[type='search']
+2026-01-13 12:37:56,363 - selenium_handler - ERROR - 找不到搜索框
+2026-01-13 12:37:56,363 - xhs_selenium_crawler - ERROR - Selenium搜索失败: 外卖翻车
+2026-01-13 12:37:56,364 - xhs_selenium_crawler - INFO - 使用关键词搜索: 点餐翻车
+2026-01-13 12:37:56,364 - xhs_selenium_crawler - INFO - 使用Selenium搜索关键词: 点餐翻车
+2026-01-13 12:38:21,965 - selenium_handler - WARNING - 等待元素超时: css selector=input[placeholder='搜索']
+2026-01-13 12:38:43,040 - selenium_handler - WARNING - 等待元素超时: css selector=input[type='search']
+2026-01-13 12:38:43,040 - selenium_handler - ERROR - 找不到搜索框
+2026-01-13 12:38:43,040 - xhs_selenium_crawler - ERROR - Selenium搜索失败: 点餐翻车
+2026-01-13 12:38:43,040 - xhs_selenium_crawler - INFO - 使用关键词搜索: 外卖漫画
+2026-01-13 12:38:43,040 - xhs_selenium_crawler - INFO - 使用Selenium搜索关键词: 外卖漫画
+2026-01-13 12:39:08,815 - selenium_handler - WARNING - 等待元素超时: css selector=input[placeholder='搜索']
+2026-01-13 12:39:29,879 - selenium_handler - WARNING - 等待元素超时: css selector=input[type='search']
+2026-01-13 12:39:29,880 - selenium_handler - ERROR - 找不到搜索框
+2026-01-13 12:39:29,880 - xhs_selenium_crawler - ERROR - Selenium搜索失败: 外卖漫画
+2026-01-13 12:39:29,880 - xhs_selenium_crawler - INFO - 使用关键词搜索: 点餐漫画
+2026-01-13 12:39:29,880 - xhs_selenium_crawler - INFO - 使用Selenium搜索关键词: 点餐漫画
+2026-01-13 12:39:55,663 - selenium_handler - WARNING - 等待元素超时: css selector=input[placeholder='搜索']
+2026-01-13 12:40:16,732 - selenium_handler - WARNING - 等待元素超时: css selector=input[type='search']
+2026-01-13 12:40:16,732 - selenium_handler - ERROR - 找不到搜索框
+2026-01-13 12:40:16,732 - xhs_selenium_crawler - ERROR - Selenium搜索失败: 点餐漫画
+2026-01-13 12:40:16,733 - xhs_selenium_crawler - INFO - 爬取完成
+2026-01-13 12:40:16,734 - xhs_selenium_crawler - INFO - 爬取报告保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\crawl_report.json
+2026-01-13 12:40:16,734 - xhs_selenium_crawler - INFO - 爬取统计:
+2026-01-13 12:40:16,734 - xhs_selenium_crawler - INFO -   搜索笔记数: 0
+2026-01-13 12:40:16,734 - xhs_selenium_crawler - INFO -   处理笔记数: 0
+2026-01-13 12:40:16,734 - xhs_selenium_crawler - INFO -   收集连环画: 0
+2026-01-13 12:40:16,734 - xhs_selenium_crawler - INFO -   失败笔记数: 0
+2026-01-13 12:40:16,735 - xhs_selenium_crawler - INFO -   成功率: 0.0%
+2026-01-13 12:40:16,735 - xhs_selenium_crawler - INFO -   爬取时长: 0:03:07
+2026-01-13 12:40:18,944 - selenium_handler - INFO - 浏览器已关闭
+2026-01-13 12:40:18,944 - request_handler - INFO - 请求处理器已关闭
+2026-01-13 12:40:18,944 - xhs_selenium_crawler - INFO - 爬虫已关闭
+2026-01-13 12:40:18,944 - xhs_crawler - INFO - 爬虫任务完成，收集到 0 个连环画
+2026-01-13 12:55:24,839 - selenium_handler - INFO - Selenium浏览器初始化成功: chrome
+2026-01-13 12:55:24,840 - selenium_handler - INFO - 直接访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E5%A4%96%E5%8D%96%E7%BF%BB%E8%BD%A6
+2026-01-13 12:55:31,287 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
+2026-01-13 12:57:09,767 - selenium_handler - INFO - 尝试按ESC键关闭弹窗
+2026-01-13 12:57:10,498 - selenium_handler - INFO - 提取到 24 张图片
+2026-01-13 12:57:10,499 - selenium_handler - INFO - 访问笔记页面: https://www.xiaohongshu.com/explore/6587b9c2000000001f01f6a1
+2026-01-13 12:57:16,896 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
+2026-01-13 12:57:32,079 - selenium_handler - INFO - 浏览器已关闭
+2026-01-13 12:58:30,390 - selenium_handler - INFO - Selenium浏览器初始化成功: chrome
+2026-01-13 12:58:30,390 - selenium_handler - INFO - 直接访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E5%A4%96%E5%8D%96%E7%BF%BB%E8%BD%A6
+2026-01-13 12:58:36,782 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
+2026-01-13 13:00:15,247 - selenium_handler - INFO - 尝试按ESC键关闭弹窗
+2026-01-13 13:00:16,563 - selenium_handler - INFO - 提取到 24 张图片
+2026-01-13 13:00:28,081 - selenium_handler - INFO - 访问笔记页面: https://www.xiaohongshu.com/explore/6587b9c2000000001f01f6a1
+2026-01-13 13:00:36,481 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
+2026-01-13 13:01:03,487 - selenium_handler - INFO - 浏览器已关闭
+2026-01-13 13:01:09,116 - xhs_crawler - INFO - 项目初始化完成
+2026-01-13 13:01:18,237 - xhs_crawler - INFO - 开始执行简化版爬虫任务
+2026-01-13 13:01:23,334 - selenium_handler - INFO - Selenium浏览器初始化成功: chrome
+2026-01-13 13:01:23,335 - simple_xhs_crawler - INFO - 开始爬取小红书连环画
+2026-01-13 13:01:23,335 - simple_xhs_crawler - INFO - 处理关键词: 外卖翻车
+2026-01-13 13:01:23,335 - simple_xhs_crawler - INFO - 搜索关键词: 外卖翻车
+2026-01-13 13:01:23,335 - selenium_handler - INFO - 直接访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E5%A4%96%E5%8D%96%E7%BF%BB%E8%BD%A6
+2026-01-13 13:01:29,726 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
+2026-01-13 13:03:08,383 - selenium_handler - INFO - 尝试按ESC键关闭弹窗
+2026-01-13 13:03:09,064 - xhs_parser - INFO - 总共找到 48 个候选元素
+2026-01-13 13:03:09,067 - xhs_parser - INFO - 成功解析 6 个笔记
+2026-01-13 13:03:09,067 - simple_xhs_crawler - INFO - 解析到 6 个笔记
+2026-01-13 13:03:09,067 - simple_xhs_crawler - INFO - 处理笔记: 694e4d72000000001d039ab4
+2026-01-13 13:03:09,067 - selenium_handler - INFO - 访问笔记页面: https://www.xiaohongshu.com/explore/694e4d72000000001d039ab4
+2026-01-13 13:03:17,369 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
+2026-01-13 13:03:23,263 - xhs_parser - INFO - 解析到笔记: ID=694e4d72000000001d039ab4, 标题长度=6, 图片数=20
+2026-01-13 13:03:23,265 - simple_xhs_crawler - WARNING - 笔记验证失败: 694e4d72000000001d039ab4
+2026-01-13 13:03:23,265 - simple_xhs_crawler - INFO - 处理笔记: 694fc565000000002103c8f9
+2026-01-13 13:03:23,266 - selenium_handler - INFO - 访问笔记页面: https://www.xiaohongshu.com/explore/694fc565000000002103c8f9
+2026-01-13 13:03:29,816 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
+2026-01-13 13:03:35,387 - xhs_parser - INFO - 解析到笔记: ID=694fc565000000002103c8f9, 标题长度=6, 图片数=20
+2026-01-13 13:03:35,388 - simple_xhs_crawler - WARNING - 笔记验证失败: 694fc565000000002103c8f9
+2026-01-13 13:03:35,388 - simple_xhs_crawler - INFO - 处理笔记: 695b2301000000002200a799
+2026-01-13 13:03:35,388 - selenium_handler - INFO - 访问笔记页面: https://www.xiaohongshu.com/explore/695b2301000000002200a799
+2026-01-13 13:03:44,614 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
+2026-01-13 13:03:50,463 - xhs_parser - INFO - 解析到笔记: ID=695b2301000000002200a799, 标题长度=6, 图片数=20
+2026-01-13 13:03:50,463 - simple_xhs_crawler - WARNING - 笔记验证失败: 695b2301000000002200a799
+2026-01-13 13:03:50,463 - simple_xhs_crawler - INFO - 处理笔记: 6955591b00000000220202ed
+2026-01-13 13:03:50,464 - selenium_handler - INFO - 访问笔记页面: https://www.xiaohongshu.com/explore/6955591b00000000220202ed
+2026-01-13 13:03:58,950 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
+2026-01-13 13:04:04,945 - xhs_parser - INFO - 解析到笔记: ID=6955591b00000000220202ed, 标题长度=6, 图片数=20
+2026-01-13 13:04:04,945 - simple_xhs_crawler - WARNING - 笔记验证失败: 6955591b00000000220202ed
+2026-01-13 13:04:04,945 - simple_xhs_crawler - INFO - 处理笔记: 69401190000000000d03c98e
+2026-01-13 13:04:04,945 - selenium_handler - INFO - 访问笔记页面: https://www.xiaohongshu.com/explore/69401190000000000d03c98e
+2026-01-13 13:04:11,720 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
+2026-01-13 13:04:17,251 - xhs_parser - INFO - 解析到笔记: ID=69401190000000000d03c98e, 标题长度=6, 图片数=20
+2026-01-13 13:04:17,251 - simple_xhs_crawler - WARNING - 笔记验证失败: 69401190000000000d03c98e
+2026-01-13 13:04:17,251 - simple_xhs_crawler - INFO - 处理笔记: 694a5d80000000001e027161
+2026-01-13 13:04:17,251 - selenium_handler - INFO - 访问笔记页面: https://www.xiaohongshu.com/explore/694a5d80000000001e027161
+2026-01-13 13:04:23,861 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
+2026-01-13 13:04:29,381 - xhs_parser - INFO - 解析到笔记: ID=694a5d80000000001e027161, 标题长度=6, 图片数=20
+2026-01-13 13:04:29,383 - simple_xhs_crawler - WARNING - 笔记验证失败: 694a5d80000000001e027161
+2026-01-13 13:04:29,383 - simple_xhs_crawler - INFO - 处理关键词: 点餐翻车
+2026-01-13 13:04:29,383 - simple_xhs_crawler - INFO - 搜索关键词: 点餐翻车
+2026-01-13 13:04:29,383 - selenium_handler - INFO - 直接访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E7%82%B9%E9%A4%90%E7%BF%BB%E8%BD%A6
+2026-01-13 13:04:35,489 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
+2026-01-13 13:06:14,099 - selenium_handler - INFO - 尝试按ESC键关闭弹窗
+2026-01-13 13:06:14,600 - xhs_parser - INFO - 总共找到 48 个候选元素
+2026-01-13 13:06:14,602 - xhs_parser - INFO - 成功解析 6 个笔记
+2026-01-13 13:06:14,602 - simple_xhs_crawler - INFO - 解析到 6 个笔记
+2026-01-13 13:06:14,603 - simple_xhs_crawler - INFO - 处理笔记: 6949c377000000001e025313
+2026-01-13 13:06:14,603 - selenium_handler - INFO - 访问笔记页面: https://www.xiaohongshu.com/explore/6949c377000000001e025313
+2026-01-13 13:06:22,703 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
+2026-01-13 13:06:28,580 - xhs_parser - INFO - 解析到笔记: ID=6949c377000000001e025313, 标题长度=6, 图片数=20
+2026-01-13 13:06:28,580 - simple_xhs_crawler - WARNING - 笔记验证失败: 6949c377000000001e025313
+2026-01-13 13:06:28,580 - simple_xhs_crawler - INFO - 处理笔记: 69531979000000001e00c6b5
+2026-01-13 13:06:28,581 - selenium_handler - INFO - 访问笔记页面: https://www.xiaohongshu.com/explore/69531979000000001e00c6b5
+2026-01-13 13:06:36,899 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
+2026-01-13 13:06:42,777 - xhs_parser - INFO - 解析到笔记: ID=69531979000000001e00c6b5, 标题长度=6, 图片数=20
+2026-01-13 13:06:42,778 - simple_xhs_crawler - WARNING - 笔记验证失败: 69531979000000001e00c6b5
+2026-01-13 13:06:42,778 - simple_xhs_crawler - INFO - 处理笔记: 69512598000000001e010b2f
+2026-01-13 13:06:42,778 - selenium_handler - INFO - 访问笔记页面: https://www.xiaohongshu.com/explore/69512598000000001e010b2f
+2026-01-13 13:06:50,877 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
+2026-01-13 13:06:56,696 - xhs_parser - INFO - 解析到笔记: ID=69512598000000001e010b2f, 标题长度=6, 图片数=20
+2026-01-13 13:06:56,699 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131306/be82e6f50a709cd1648844157871f065/1040g2sg31q6p501u7o7049pk3105bvu0toa2pr0!nc_n_webp_mw_1
+2026-01-13 13:06:59,099 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131306/be82e6f50a709cd1648844157871f065/1040g2sg31q6p501u7o7049pk3105bvu0toa2pr0!nc_n_webp_mw_1
+2026-01-13 13:06:59,359 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_1768280816699_4616\images\image_01.jpg
+2026-01-13 13:06:59,803 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131306/e4dcfbee3e6cd5a910e3b5779d4c5ab2/1040g2sg31qad5o8t0a0049jouuk1n1nsmntmiig!nc_n_webp_mw_1
+2026-01-13 13:07:01,455 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131306/e4dcfbee3e6cd5a910e3b5779d4c5ab2/1040g2sg31qad5o8t0a0049jouuk1n1nsmntmiig!nc_n_webp_mw_1
+2026-01-13 13:07:01,540 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_1768280816699_4616\images\image_02.jpg
+2026-01-13 13:07:01,540 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131306/a5e177ae0472a0753919619d820f8792/spectrum/1040g0k031qhsc4k5n0005n1g98n1bogr5lmfmhg!nc_n_webp_mw_1
+2026-01-13 13:07:03,622 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131306/a5e177ae0472a0753919619d820f8792/spectrum/1040g0k031qhsc4k5n0005n1g98n1bogr5lmfmhg!nc_n_webp_mw_1
+2026-01-13 13:07:03,657 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_1768280816699_4616\images\image_03.jpg
+2026-01-13 13:07:03,658 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131306/a8ac15845ce0215c3db442de312e34a7/notes_pre_post/1040g3k031qra8rsvg00049m2ra58id2laht79rg!nc_n_webp_mw_1
+2026-01-13 13:07:05,384 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131306/a8ac15845ce0215c3db442de312e34a7/notes_pre_post/1040g3k031qra8rsvg00049m2ra58id2laht79rg!nc_n_webp_mw_1
+2026-01-13 13:07:05,435 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_1768280816699_4616\images\image_04.jpg
+2026-01-13 13:07:05,436 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131306/d04b6c98ed57964df31e6863278df9b0/spectrum/1040g34o31qab0lm0720g5no31mbg8nh67e8ldeg!nc_n_webp_mw_1
+2026-01-13 13:07:07,361 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131306/d04b6c98ed57964df31e6863278df9b0/spectrum/1040g34o31qab0lm0720g5no31mbg8nh67e8ldeg!nc_n_webp_mw_1
+2026-01-13 13:07:07,398 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_1768280816699_4616\images\image_05.jpg
+2026-01-13 13:07:07,400 - simple_xhs_crawler - WARNING - 图片分辨率不足: 640x480
+2026-01-13 13:07:07,401 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131306/55259a8204fd797bfb77c6b318418b7a/notes_uhdr/1040g3qo31qtsus71ng005nkhlnh08eurmkhdjr8!nc_n_webp_mw_1
+2026-01-13 13:07:09,271 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131306/55259a8204fd797bfb77c6b318418b7a/notes_uhdr/1040g3qo31qtsus71ng005nkhlnh08eurmkhdjr8!nc_n_webp_mw_1
+2026-01-13 13:07:09,322 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_1768280816699_4616\images\image_06.jpg
+2026-01-13 13:07:09,323 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131306/f41ad6425b89825b6456b3f3a7f842ad/1040g00831q5bpqqi0a705n2b56849ntc68at1co!nc_n_webp_mw_1
+2026-01-13 13:07:11,396 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131306/f41ad6425b89825b6456b3f3a7f842ad/1040g00831q5bpqqi0a705n2b56849ntc68at1co!nc_n_webp_mw_1
+2026-01-13 13:07:11,421 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_1768280816699_4616\images\image_07.jpg
+2026-01-13 13:07:11,422 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131306/d7acf68b1ace086e51751b76e22916c1/notes_pre_post/1040g3k031q2ptr8b70104156q7jj0u1nfu57ej0!nc_n_webp_mw_1
+2026-01-13 13:07:13,844 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131306/d7acf68b1ace086e51751b76e22916c1/notes_pre_post/1040g3k031q2ptr8b70104156q7jj0u1nfu57ej0!nc_n_webp_mw_1
+2026-01-13 13:07:13,876 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_1768280816699_4616\images\image_08.jpg
+2026-01-13 13:07:13,876 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131306/b6db954775ebd56dbe733b070fd6ed0a/1040g2sg31qabpo9rn2d05n6h2nllk3c8vh8q5r8!nc_n_webp_mw_1
+2026-01-13 13:07:16,277 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131306/b6db954775ebd56dbe733b070fd6ed0a/1040g2sg31qabpo9rn2d05n6h2nllk3c8vh8q5r8!nc_n_webp_mw_1
+2026-01-13 13:07:16,295 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_1768280816699_4616\images\image_09.jpg
+2026-01-13 13:07:16,295 - request_handler - INFO - 下载图片: https://sns-webpic-qc.xhscdn.com/202601131306/7757da977cc41356332a30d7ffeb0184/1040g00831r0iuat07u0g40uvogk594da8qiotdg!nc_n_webp_mw_1
+2026-01-13 13:07:17,800 - request_handler - INFO - 发送GET请求到: https://sns-webpic-qc.xhscdn.com/202601131306/7757da977cc41356332a30d7ffeb0184/1040g00831r0iuat07u0g40uvogk594da8qiotdg!nc_n_webp_mw_1
+2026-01-13 13:07:17,863 - request_handler - INFO - 图片保存成功: D:\1- VS file menu\xiaohongshu\data\processed\comics\comic_1768280816699_4616\images\image_10.jpg
+2026-01-13 13:07:17,865 - simple_xhs_crawler - INFO - 连环画数据保存成功: comic_1768280837864_1727
+2026-01-13 13:07:17,865 - simple_xhs_crawler - INFO - 成功收集连环画 1/3: 马上登录即可
+2026-01-13 13:07:21,904 - simple_xhs_crawler - INFO - 处理笔记: 6946650d000000001e01505d
+2026-01-13 13:07:21,905 - selenium_handler - INFO - 访问笔记页面: https://www.xiaohongshu.com/explore/6946650d000000001e01505d
+2026-01-13 13:07:30,307 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
+2026-01-13 13:07:36,212 - xhs_parser - INFO - 解析到笔记: ID=6946650d000000001e01505d, 标题长度=6, 图片数=20
+2026-01-13 13:07:36,213 - simple_xhs_crawler - WARNING - 笔记验证失败: 6946650d000000001e01505d
+2026-01-13 13:07:36,213 - simple_xhs_crawler - INFO - 处理笔记: 695ecc7c000000001a036455
+2026-01-13 13:07:36,213 - selenium_handler - INFO - 访问笔记页面: https://www.xiaohongshu.com/explore/695ecc7c000000001a036455
+2026-01-13 13:07:44,621 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
+2026-01-13 13:07:50,540 - xhs_parser - INFO - 解析到笔记: ID=695ecc7c000000001a036455, 标题长度=6, 图片数=20
+2026-01-13 13:07:50,540 - simple_xhs_crawler - WARNING - 笔记验证失败: 695ecc7c000000001a036455
+2026-01-13 13:07:50,541 - simple_xhs_crawler - INFO - 处理笔记: 69566d4b000000001d039efa
+2026-01-13 13:07:50,541 - selenium_handler - INFO - 访问笔记页面: https://www.xiaohongshu.com/explore/69566d4b000000001d039efa
+2026-01-13 13:07:58,714 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
+2026-01-13 13:08:04,552 - xhs_parser - INFO - 解析到笔记: ID=69566d4b000000001d039efa, 标题长度=6, 图片数=20
+2026-01-13 13:08:04,553 - simple_xhs_crawler - WARNING - 笔记验证失败: 69566d4b000000001d039efa
+2026-01-13 13:08:04,553 - simple_xhs_crawler - INFO - 处理关键词: 外卖漫画
+2026-01-13 13:08:04,553 - simple_xhs_crawler - INFO - 搜索关键词: 外卖漫画
+2026-01-13 13:08:04,553 - selenium_handler - INFO - 直接访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E5%A4%96%E5%8D%96%E6%BC%AB%E7%94%BB
+2026-01-13 13:08:09,757 - selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']

@@ -1,0 +1,198 @@
+PS D:\1- VS file menu\xiaohongshu> pyenv shell 3.13.0
+PS D:\1- VS file menu\xiaohongshu> & C:/Users/hp/.pyenv/pyenv-win/versions/3.13.0/python.exe "d:/1- VS file menu/xiaohongshu/tests/test_login.py"
+✅ 成功导入 SeleniumHandler
+小红书登录测试工具
+============================================================
+1. 自动登录测试
+2. 手动登录并保存cookies
+3. 退出
+
+请选择操作 (1-3): 2
+🔧 手动登录模式
+============================================================
+1. 初始化浏览器...
+2026-01-13 14:33:45,926 - WDM - INFO - ====== WebDriver manager ======
+2026-01-13 14:33:49,397 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+C:\Users\hp\.pyenv\pyenv-win\versions\3.13.0\Lib\site-packages\urllib3\connectionpool.py:1064: InsecureRequestWarning: Unverified HTTPS request is being made to host '127.0.0.1'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(
+2026-01-13 14:33:50,175 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+C:\Users\hp\.pyenv\pyenv-win\versions\3.13.0\Lib\site-packages\urllib3\connectionpool.py:1064: InsecureRequestWarning: Unverified HTTPS request is being made to host '127.0.0.1'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(
+2026-01-13 14:33:51,402 - WDM - INFO - There is no [win64] chromedriver "143.0.7499.192" for browser google-chrome "143.0.7499" in cache
+2026-01-13 14:33:51,402 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+C:\Users\hp\.pyenv\pyenv-win\versions\3.13.0\Lib\site-packages\urllib3\connectionpool.py:1064: InsecureRequestWarning: Unverified HTTPS request is being made to host '127.0.0.1'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(
+C:\Users\hp\.pyenv\pyenv-win\versions\3.13.0\Lib\site-packages\urllib3\connectionpool.py:1064: InsecureRequestWarning: Unverified HTTPS request is being made to host '127.0.0.1'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(
+2026-01-13 14:33:53,063 - WDM - INFO - WebDriver version 143.0.7499.192 selected
+2026-01-13 14:33:53,068 - WDM - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/143.0.7499.192/win32/chromedriver-win32.zip
+2026-01-13 14:33:53,068 - WDM - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/143.0.7499.192/win32/chromedriver-win32.zip
+C:\Users\hp\.pyenv\pyenv-win\versions\3.13.0\Lib\site-packages\urllib3\connectionpool.py:1064: InsecureRequestWarning: Unverified HTTPS request is being made to host '127.0.0.1'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(
+2026-01-13 14:33:53,775 - WDM - INFO - Driver downloading response is 200
+2026-01-13 14:33:55,416 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+C:\Users\hp\.pyenv\pyenv-win\versions\3.13.0\Lib\site-packages\urllib3\connectionpool.py:1064: InsecureRequestWarning: Unverified HTTPS request is being made to host '127.0.0.1'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(
+2026-01-13 14:33:56,292 - WDM - INFO - Driver has been saved in cache [d:\1- VS file menu\xiaohongshu\.wdm\drivers\chromedriver\win64\143.0.7499.192]
+
+DevTools listening on ws://127.0.0.1:58002/devtools/browser/11b87655-9b99-4bbb-affc-22d9042322a6
+2026-01-13 14:33:58,049 - src.crawler.selenium_handler - INFO - Selenium浏览器初始化成功: chrome
+wiftshader) flag to opt in to lower security guarantees for trusted content.
+[7172:27892:0113/143400.039:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8C01900AC500000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[7172:27892:0113/143400.130:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8C0C000AC500000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+
+按回车键继续（登录完成后）...[9920:29632:0113/143406.167:ERROR:google_apis\gcm\engine\registration_request.cc:292] Registration response error message: DEPRECATED_ENDPOINT    
+Created TensorFlow Lite XNNPACK delegate for CPU.
+[9920:29632:0113/143430.013:ERROR:google_apis\gcm\engine\registration_request.cc:292] Registration response error message: DEPRECATED_ENDPOINT
+[9920:29632:0113/143511.778:ERROR:google_apis\gcm\engine\registration_request.cc:292] Registration response error message: QUOTA_EXCEEDED
+
+✅ 检测到已登录状态
+2026-01-13 14:36:39,221 - src.crawler.selenium_handler - INFO - ✅ Cookies已保存到: xiaohongshu_cookies.json (13个)
+✅ Cookies保存成功
+[21644:25232:0113/143639.249:ERROR:gpu\ipc\client\command_buffer_proxy_impl.cc:321] GPU state invalid after WaitForGetOffsetInRange.
+2026-01-13 14:36:41,528 - src.crawler.selenium_handler - INFO - 浏览器已关闭
+✅ 浏览器已关闭
+PS D:\1- VS file menu\xiaohongshu> & C:/Users/hp/.pyenv/pyenv-win/versions/3.13.0/python.exe "d:/1- VS file menu/xiaohongshu/tests/test_login.py"
+✅ 成功导入 SeleniumHandler
+小红书登录测试工具
+============================================================
+1. 自动登录测试
+2. 手动登录并保存cookies
+3. 退出
+
+请选择操作 (1-3): 1
+🧪 小红书登录功能测试
+============================================================
+📁 找到cookie文件: xiaohongshu_cookies.json
+  包含 13 个cookies
+
+1. 初始化浏览器...
+2026-01-13 14:37:04,287 - WDM - INFO - ====== WebDriver manager ======
+2026-01-13 14:37:07,023 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+C:\Users\hp\.pyenv\pyenv-win\versions\3.13.0\Lib\site-packages\urllib3\connectionpool.py:1064: InsecureRequestWarning: Unverified HTTPS request is being made to host '127.0.0.1'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(
+2026-01-13 14:37:07,528 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+C:\Users\hp\.pyenv\pyenv-win\versions\3.13.0\Lib\site-packages\urllib3\connectionpool.py:1064: InsecureRequestWarning: Unverified HTTPS request is being made to host '127.0.0.1'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(
+2026-01-13 14:37:08,276 - WDM - INFO - Driver [d:\1- VS file menu\xiaohongshu\.wdm\drivers\chromedriver\win64\143.0.7499.192\chromedriver-win32/chromedriver.exe] found in cache
+
+DevTools listening on ws://127.0.0.1:63522/devtools/browser/aeae2f48-7d55-46e5-91fd-96d54c176ba2
+2026-01-13 14:37:09,381 - src.crawler.selenium_handler - INFO - Selenium浏览器初始化成功: chrome
+
+2. 尝试登录...
+   浏览器窗口将打开，请扫码登录小红书
+   登录成功后，cookies将自动保存
+   等待30秒...
+
+[2812:13084:0113/143710.121:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8E019005C410000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[2812:13084:0113/143710.201:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A88019005C410000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[2812:13084:0113/143710.411:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8B019005C410000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[2812:13084:0113/143711.303:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A800BB005C410000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[2812:13084:0113/143711.413:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A830BB005C410000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+2026-01-13 14:37:13,432 - src.crawler.selenium_handler - INFO - 找到cookie文件: xiaohongshu_cookies.json
+2026-01-13 14:37:13,433 - src.crawler.selenium_handler - INFO - 正在加载 13 个cookies...
+2026-01-13 14:37:13,758 - src.crawler.selenium_handler - INFO - ✅ 已成功加载 13/13 个cookies
+[2812:13084:0113/143715.255:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A88019005C410000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[2812:13084:0113/143715.317:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8E019005C410000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[2812:13084:0113/143715.472:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8B019005C410000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[2812:13084:0113/143716.088:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A800BB005C410000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[2812:13084:0113/143716.141:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A830BB005C410000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[9648:26304:0113/143718.977:ERROR:google_apis\gcm\engine\registration_request.cc:292] Registration response error message: QUOTA_EXCEEDED
+2026-01-13 14:37:19,554 - src.crawler.selenium_handler - INFO - ✅ 已通过cookie自动登录
+✅ 登录测试成功！
+
+3. 测试搜索功能...
+2026-01-13 14:37:19,554 - src.crawler.selenium_handler - INFO - 访问页面: https://www.xiaohongshu.com/search_result?keyword=外卖翻车
+[2812:13084:0113/143720.025:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A890BB005C410000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[2812:13084:0113/143720.144:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A800AD015C410000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[2812:13084:0113/143720.265:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A830AD015C410000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[2812:13084:0113/143720.764:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A890AD015C410000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[2812:13084:0113/143720.880:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A860AD015C410000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+Created TensorFlow Lite XNNPACK delegate for CPU.
+2026-01-13 14:37:26,173 - src.crawler.selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
+✅ 登录状态正常
+✅ 搜索功能正常，已登录状态访问成功
+2026-01-13 14:37:32,891 - src.crawler.selenium_handler - INFO - 提取到 54 张图片
+✅ 提取到 54 张图片
+   第一张图片: https://sns-avatar-qc.xhscdn.com/avatar/645b802027c6616ef4dc0b4a.jpg?imageView2/...
+📸 已保存截图: test_login_success.png
+💾 已保存页面源码: test_login_page.html
+
+============================================================
+📋 测试完成
+Cookie文件: xiaohongshu_cookies.json
+下次运行程序将自动使用保存的cookies
+2026-01-13 14:37:35,565 - src.crawler.selenium_handler - INFO - 浏览器已关闭
+✅ 浏览器已关闭
+PS D:\1- VS file menu\xiaohongshu> & C:/Users/hp/.pyenv/pyenv-win/versions/3.13.0/python.exe "d:/1- VS file menu/xiaohongshu/tests/test_login.py"
+✅ 成功导入 SeleniumHandler
+小红书登录测试工具
+============================================================
+1. 自动登录测试
+2. 手动登录并保存cookies
+3. 退出
+
+请选择操作 (1-3): 1
+🧪 小红书登录功能测试
+============================================================
+📁 找到cookie文件: xiaohongshu_cookies.json
+  包含 13 个cookies
+
+1. 初始化浏览器...
+2026-01-13 14:38:13,161 - WDM - INFO - ====== WebDriver manager ======
+2026-01-13 14:38:16,027 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+C:\Users\hp\.pyenv\pyenv-win\versions\3.13.0\Lib\site-packages\urllib3\connectionpool.py:1064: InsecureRequestWarning: Unverified HTTPS request is being made to host '127.0.0.1'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(
+2026-01-13 14:38:16,622 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+C:\Users\hp\.pyenv\pyenv-win\versions\3.13.0\Lib\site-packages\urllib3\connectionpool.py:1064: InsecureRequestWarning: Unverified HTTPS request is being made to host '127.0.0.1'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(
+2026-01-13 14:38:17,166 - WDM - INFO - Driver [d:\1- VS file menu\xiaohongshu\.wdm\drivers\chromedriver\win64\143.0.7499.192\chromedriver-win32/chromedriver.exe] found in cache
+
+DevTools listening on ws://127.0.0.1:56805/devtools/browser/4d7b4e92-ab0a-4cbf-a8b2-64be1215b4c5
+2026-01-13 14:38:18,254 - src.crawler.selenium_handler - INFO - Selenium浏览器初始化成功: chrome
+
+2. 尝试登录...
+   浏览器窗口将打开，请扫码登录小红书
+   登录成功后，cookies将自动保存
+   等待30秒...
+
+[30592:21644:0113/143818.943:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8201A004C570000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[30592:21644:0113/143819.034:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8F019004C570000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[30592:21644:0113/143819.215:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8C019004C570000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[30592:21644:0113/143820.053:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8C019004C570000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[30592:21644:0113/143820.210:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A84080014C570000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+2026-01-13 14:38:22,235 - src.crawler.selenium_handler - INFO - 找到cookie文件: xiaohongshu_cookies.json
+2026-01-13 14:38:22,236 - src.crawler.selenium_handler - INFO - 正在加载 13 个cookies...
+2026-01-13 14:38:22,372 - src.crawler.selenium_handler - INFO - ✅ 已成功加载 13/13 个cookies
+[30592:21644:0113/143823.782:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8F019004C570000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[30592:21644:0113/143823.851:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8201A004C570000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[30592:21644:0113/143823.957:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8C019004C570000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[30592:21644:0113/143824.594:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A84080014C570000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[30592:21644:0113/143824.643:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A87080014C570000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+2026-01-13 14:38:27,832 - src.crawler.selenium_handler - INFO - ✅ 已通过cookie自动登录
+✅ 登录测试成功！
+
+3. 测试搜索功能...
+2026-01-13 14:38:27,832 - src.crawler.selenium_handler - INFO - 访问页面: https://www.xiaohongshu.com/search_result?keyword=外卖翻车
+[30592:21644:0113/143828.243:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8C019004C570000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[30592:21644:0113/143828.317:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8A080014C570000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[30592:21644:0113/143828.407:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8F019004C570000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[30592:21644:0113/143828.791:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8D080014C570000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[30592:21644:0113/143828.853:ERROR:gpu\command_buffer\service\gles2_cmd_decoder_passthrough.cc:1091] [GroupMarkerNotSet(crbug.com/242999)!:A8B093014C570000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[21856:16280:0113/143832.989:ERROR:google_apis\gcm\engine\registration_request.cc:292] Registration response error message: DEPRECATED_ENDPOINT
+2026-01-13 14:38:34,010 - src.crawler.selenium_handler - INFO - 找到登录弹窗关闭按钮: div[class*='close']
+Created TensorFlow Lite XNNPACK delegate for CPU.
+✅ 登录状态正常
+✅ 搜索功能正常，已登录状态访问成功
+2026-01-13 14:38:40,801 - src.crawler.selenium_handler - INFO - 提取到 54 张图片
+✅ 提取到 54 张图片
+   第一张图片: https://sns-avatar-qc.xhscdn.com/avatar/645b802027c6616ef4dc0b4a.jpg?imageView2/...
+📸 已保存截图: test_login_success.png
+💾 已保存页面源码: test_login_page.html
+
+============================================================
+📋 测试完成
+Cookie文件: xiaohongshu_cookies.json
+下次运行程序将自动使用保存的cookies
+2026-01-13 14:38:43,465 - src.crawler.selenium_handler - INFO - 浏览器已关闭
+✅ 浏览器已关闭
