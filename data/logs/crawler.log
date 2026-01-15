@@ -748,3 +748,423 @@
 2026-01-13 16:14:55,909 - request_handler - INFO - 请求处理器已关闭
 2026-01-13 16:14:55,909 - xhs_crawler - INFO - 爬虫已关闭
 2026-01-13 16:14:55,909 - xhs_crawler - INFO - 爬虫任务完成，收集到 0 个连环画
+2026-01-15 13:39:08,504 - xhs_crawler - INFO - 项目初始化完成
+2026-01-15 13:39:24,304 - xhs_crawler - INFO - 开始执行简化版爬虫任务
+2026-01-15 13:39:24,304 - xhs_crawler - INFO - 开始爬取流程
+2026-01-15 13:39:29,006 - xhs_crawler - INFO - 所有组件初始化成功
+2026-01-15 13:39:29,007 - xhs_crawler - INFO - 开始登录小红书...
+2026-01-15 13:39:39,043 - xhs_crawler - INFO - ✅ 登录成功
+2026-01-15 13:39:39,044 - xhs_crawler - INFO - 搜索关键词: ['外卖翻车', '点餐翻车', '外卖漫画', '点餐漫画']
+2026-01-15 13:39:39,044 - xhs_crawler - INFO - 处理关键词: 外卖翻车
+2026-01-15 13:39:39,044 - xhs_crawler - INFO - 搜索关键词 '外卖翻车' (尝试 1/3)
+2026-01-15 13:39:39,045 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E5%A4%96%E5%8D%96%E7%BF%BB%E8%BD%A6
+2026-01-15 13:39:49,667 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:39:49,676 - xhs_parser - INFO - 成功解析 1 个笔记
+2026-01-15 13:39:49,679 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_外卖翻车_1768455589.html
+2026-01-15 13:39:49,729 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:39:49,735 - xhs_parser - INFO - 成功解析 1 个笔记
+2026-01-15 13:39:49,735 - xhs_crawler - INFO - 解析到 1 个笔记
+2026-01-15 13:39:49,736 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 1/3): name 'random' is not defined
+2026-01-15 13:39:49,736 - xhs_crawler - INFO - 等待5秒后重试...
+2026-01-15 13:39:54,736 - xhs_crawler - INFO - 搜索关键词 '外卖翻车' (尝试 2/3)
+2026-01-15 13:39:54,736 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E5%A4%96%E5%8D%96%E7%BF%BB%E8%BD%A6
+2026-01-15 13:40:04,786 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:40:04,792 - xhs_parser - INFO - 成功解析 1 个笔记
+2026-01-15 13:40:04,794 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_外卖翻车_1768455604.html
+2026-01-15 13:40:04,848 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:40:04,854 - xhs_parser - INFO - 成功解析 1 个笔记
+2026-01-15 13:40:04,854 - xhs_crawler - INFO - 解析到 1 个笔记
+2026-01-15 13:40:04,855 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 2/3): name 'random' is not defined
+2026-01-15 13:40:04,855 - xhs_crawler - INFO - 等待10秒后重试...
+2026-01-15 13:40:14,855 - xhs_crawler - INFO - 搜索关键词 '外卖翻车' (尝试 3/3)
+2026-01-15 13:40:14,856 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E5%A4%96%E5%8D%96%E7%BF%BB%E8%BD%A6
+2026-01-15 13:40:24,774 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:40:24,780 - xhs_parser - INFO - 成功解析 1 个笔记
+2026-01-15 13:40:24,783 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_外卖翻车_1768455624.html
+2026-01-15 13:40:24,834 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:40:24,841 - xhs_parser - INFO - 成功解析 1 个笔记
+2026-01-15 13:40:24,841 - xhs_crawler - INFO - 解析到 1 个笔记
+2026-01-15 13:40:24,842 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 3/3): name 'random' is not defined
+2026-01-15 13:40:24,842 - xhs_crawler - ERROR - 重试 3 次后仍然失败
+2026-01-15 13:40:24,842 - xhs_crawler - INFO - 处理关键词: 点餐翻车
+2026-01-15 13:40:24,842 - xhs_crawler - INFO - 搜索关键词 '点餐翻车' (尝试 1/3)
+2026-01-15 13:40:24,843 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E7%82%B9%E9%A4%90%E7%BF%BB%E8%BD%A6
+2026-01-15 13:40:34,971 - xhs_parser - INFO - 总共找到 50 个候选元素
+2026-01-15 13:40:34,980 - xhs_parser - INFO - 成功解析 8 个笔记
+2026-01-15 13:40:34,982 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_点餐翻车_1768455634.html
+2026-01-15 13:40:35,038 - xhs_parser - INFO - 总共找到 50 个候选元素
+2026-01-15 13:40:35,046 - xhs_parser - INFO - 成功解析 8 个笔记
+2026-01-15 13:40:35,047 - xhs_crawler - INFO - 解析到 8 个笔记
+2026-01-15 13:40:35,047 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 1/3): name 'random' is not defined
+2026-01-15 13:40:35,047 - xhs_crawler - INFO - 等待5秒后重试...
+2026-01-15 13:40:40,048 - xhs_crawler - INFO - 搜索关键词 '点餐翻车' (尝试 2/3)
+2026-01-15 13:40:40,049 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E7%82%B9%E9%A4%90%E7%BF%BB%E8%BD%A6
+2026-01-15 13:40:50,125 - xhs_parser - INFO - 总共找到 50 个候选元素
+2026-01-15 13:40:50,133 - xhs_parser - INFO - 成功解析 7 个笔记
+2026-01-15 13:40:50,137 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_点餐翻车_1768455650.html
+2026-01-15 13:40:50,192 - xhs_parser - INFO - 总共找到 50 个候选元素
+2026-01-15 13:40:50,201 - xhs_parser - INFO - 成功解析 7 个笔记
+2026-01-15 13:40:50,201 - xhs_crawler - INFO - 解析到 7 个笔记
+2026-01-15 13:40:50,201 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 2/3): name 'random' is not defined
+2026-01-15 13:40:50,202 - xhs_crawler - INFO - 等待10秒后重试...
+2026-01-15 13:41:00,203 - xhs_crawler - INFO - 搜索关键词 '点餐翻车' (尝试 3/3)
+2026-01-15 13:41:00,203 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E7%82%B9%E9%A4%90%E7%BF%BB%E8%BD%A6
+2026-01-15 13:41:10,398 - xhs_parser - INFO - 总共找到 50 个候选元素
+2026-01-15 13:41:10,407 - xhs_parser - INFO - 成功解析 7 个笔记
+2026-01-15 13:41:10,411 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_点餐翻车_1768455670.html
+2026-01-15 13:41:10,470 - xhs_parser - INFO - 总共找到 50 个候选元素
+2026-01-15 13:41:10,479 - xhs_parser - INFO - 成功解析 7 个笔记
+2026-01-15 13:41:10,479 - xhs_crawler - INFO - 解析到 7 个笔记
+2026-01-15 13:41:10,480 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 3/3): name 'random' is not defined
+2026-01-15 13:41:10,480 - xhs_crawler - ERROR - 重试 3 次后仍然失败
+2026-01-15 13:41:10,480 - xhs_crawler - INFO - 处理关键词: 外卖漫画
+2026-01-15 13:41:10,480 - xhs_crawler - INFO - 搜索关键词 '外卖漫画' (尝试 1/3)
+2026-01-15 13:41:10,480 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E5%A4%96%E5%8D%96%E6%BC%AB%E7%94%BB
+2026-01-15 13:41:20,856 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:41:20,862 - xhs_parser - INFO - 成功解析 3 个笔记
+2026-01-15 13:41:20,865 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_外卖漫画_1768455680.html
+2026-01-15 13:41:20,915 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:41:20,921 - xhs_parser - INFO - 成功解析 3 个笔记
+2026-01-15 13:41:20,921 - xhs_crawler - INFO - 解析到 3 个笔记
+2026-01-15 13:41:20,921 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 1/3): name 'random' is not defined
+2026-01-15 13:41:20,922 - xhs_crawler - INFO - 等待5秒后重试...
+2026-01-15 13:41:25,922 - xhs_crawler - INFO - 搜索关键词 '外卖漫画' (尝试 2/3)
+2026-01-15 13:41:25,922 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E5%A4%96%E5%8D%96%E6%BC%AB%E7%94%BB
+2026-01-15 13:41:36,540 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:41:36,547 - xhs_parser - INFO - 成功解析 3 个笔记
+2026-01-15 13:41:36,550 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_外卖漫画_1768455696.html
+2026-01-15 13:41:36,612 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:41:36,619 - xhs_parser - INFO - 成功解析 3 个笔记
+2026-01-15 13:41:36,620 - xhs_crawler - INFO - 解析到 3 个笔记
+2026-01-15 13:41:36,620 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 2/3): name 'random' is not defined
+2026-01-15 13:41:36,620 - xhs_crawler - INFO - 等待10秒后重试...
+2026-01-15 13:41:46,621 - xhs_crawler - INFO - 搜索关键词 '外卖漫画' (尝试 3/3)
+2026-01-15 13:41:46,621 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E5%A4%96%E5%8D%96%E6%BC%AB%E7%94%BB
+2026-01-15 13:41:56,631 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:41:56,637 - xhs_parser - INFO - 成功解析 3 个笔记
+2026-01-15 13:41:56,639 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_外卖漫画_1768455716.html
+2026-01-15 13:41:56,688 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:41:56,695 - xhs_parser - INFO - 成功解析 3 个笔记
+2026-01-15 13:41:56,695 - xhs_crawler - INFO - 解析到 3 个笔记
+2026-01-15 13:41:56,696 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 3/3): name 'random' is not defined
+2026-01-15 13:41:56,696 - xhs_crawler - ERROR - 重试 3 次后仍然失败
+2026-01-15 13:41:56,696 - xhs_crawler - INFO - 处理关键词: 点餐漫画
+2026-01-15 13:41:56,696 - xhs_crawler - INFO - 搜索关键词 '点餐漫画' (尝试 1/3)
+2026-01-15 13:41:56,696 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E7%82%B9%E9%A4%90%E6%BC%AB%E7%94%BB
+2026-01-15 13:42:06,774 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:42:06,781 - xhs_parser - INFO - 成功解析 3 个笔记
+2026-01-15 13:42:06,783 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_点餐漫画_1768455726.html
+2026-01-15 13:42:06,836 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:42:06,843 - xhs_parser - INFO - 成功解析 3 个笔记
+2026-01-15 13:42:06,843 - xhs_crawler - INFO - 解析到 3 个笔记
+2026-01-15 13:42:06,843 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 1/3): name 'random' is not defined
+2026-01-15 13:42:06,843 - xhs_crawler - INFO - 等待5秒后重试...
+2026-01-15 13:42:11,844 - xhs_crawler - INFO - 搜索关键词 '点餐漫画' (尝试 2/3)
+2026-01-15 13:42:11,844 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E7%82%B9%E9%A4%90%E6%BC%AB%E7%94%BB
+2026-01-15 13:42:21,988 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:42:21,995 - xhs_parser - INFO - 成功解析 3 个笔记
+2026-01-15 13:42:21,997 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_点餐漫画_1768455741.html
+2026-01-15 13:42:22,047 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:42:22,055 - xhs_parser - INFO - 成功解析 3 个笔记
+2026-01-15 13:42:22,055 - xhs_crawler - INFO - 解析到 3 个笔记
+2026-01-15 13:42:22,055 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 2/3): name 'random' is not defined
+2026-01-15 13:42:22,056 - xhs_crawler - INFO - 等待10秒后重试...
+2026-01-15 13:42:32,056 - xhs_crawler - INFO - 搜索关键词 '点餐漫画' (尝试 3/3)
+2026-01-15 13:42:32,056 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E7%82%B9%E9%A4%90%E6%BC%AB%E7%94%BB
+2026-01-15 13:42:42,227 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:42:42,233 - xhs_parser - INFO - 成功解析 3 个笔记
+2026-01-15 13:42:42,235 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_点餐漫画_1768455762.html
+2026-01-15 13:42:42,305 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:42:42,313 - xhs_parser - INFO - 成功解析 3 个笔记
+2026-01-15 13:42:42,313 - xhs_crawler - INFO - 解析到 3 个笔记
+2026-01-15 13:42:42,314 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 3/3): name 'random' is not defined
+2026-01-15 13:42:42,314 - xhs_crawler - ERROR - 重试 3 次后仍然失败
+2026-01-15 13:42:42,314 - xhs_crawler - INFO - 爬取完成，共收集 0 个连环画
+2026-01-15 13:42:44,586 - request_handler - INFO - 请求处理器已关闭
+2026-01-15 13:42:44,587 - xhs_crawler - INFO - 爬虫已关闭
+2026-01-15 13:42:44,588 - xhs_crawler - INFO - 报告已保存到: D:\1- VS file menu\xiaohongshu\data\processed\comics\crawl_report.json
+2026-01-15 13:43:05,003 - request_handler - INFO - 请求处理器已关闭
+2026-01-15 13:43:05,003 - xhs_crawler - INFO - 爬虫已关闭
+2026-01-15 13:43:05,003 - xhs_crawler - INFO - 爬虫任务完成，收集到 0 个连环画
+2026-01-15 13:47:05,379 - test - INFO - 开始测试爬虫模块
+2026-01-15 13:47:07,321 - request_handler - INFO - 发送GET请求到: https://www.baidu.com
+2026-01-15 13:47:07,664 - request_handler - INFO - 请求处理器已关闭
+2026-01-15 13:47:07,666 - test - INFO - 测试完成
+2026-01-15 13:47:36,999 - xhs_crawler - INFO - 项目初始化完成
+2026-01-15 13:47:47,115 - xhs_crawler - INFO - 开始执行简化版爬虫任务
+2026-01-15 13:47:47,115 - xhs_crawler - INFO - 开始爬取流程
+2026-01-15 13:47:52,109 - xhs_crawler - INFO - 所有组件初始化成功
+2026-01-15 13:47:52,109 - xhs_crawler - INFO - 开始登录小红书...
+2026-01-15 13:48:03,284 - xhs_crawler - INFO - ✅ 登录成功
+2026-01-15 13:48:03,285 - xhs_crawler - INFO - 搜索关键词: ['外卖翻车', '点餐翻车', '外卖漫画', '点餐漫画']
+2026-01-15 13:48:03,285 - xhs_crawler - INFO - 处理关键词: 外卖翻车
+2026-01-15 13:48:03,286 - xhs_crawler - INFO - 搜索关键词 '外卖翻车' (尝试 1/3)
+2026-01-15 13:48:03,286 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E5%A4%96%E5%8D%96%E7%BF%BB%E8%BD%A6
+2026-01-15 13:48:14,618 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:48:14,626 - xhs_parser - INFO - 成功解析 1 个笔记
+2026-01-15 13:48:14,629 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_外卖翻车_1768456094.html
+2026-01-15 13:48:14,698 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:48:14,708 - xhs_parser - INFO - 成功解析 1 个笔记
+2026-01-15 13:48:14,709 - xhs_crawler - INFO - 解析到 1 个笔记
+2026-01-15 13:48:14,709 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 1/3): name 'random' is not defined
+2026-01-15 13:48:14,710 - xhs_crawler - INFO - 等待5秒后重试...
+2026-01-15 13:48:19,710 - xhs_crawler - INFO - 搜索关键词 '外卖翻车' (尝试 2/3)
+2026-01-15 13:48:19,711 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E5%A4%96%E5%8D%96%E7%BF%BB%E8%BD%A6
+2026-01-15 13:48:30,233 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:48:30,242 - xhs_parser - INFO - 成功解析 1 个笔记
+2026-01-15 13:48:30,244 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_外卖翻车_1768456110.html
+2026-01-15 13:48:30,313 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:48:30,327 - xhs_parser - INFO - 成功解析 1 个笔记
+2026-01-15 13:48:30,328 - xhs_crawler - INFO - 解析到 1 个笔记
+2026-01-15 13:48:30,328 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 2/3): name 'random' is not defined
+2026-01-15 13:48:30,328 - xhs_crawler - INFO - 等待10秒后重试...
+2026-01-15 13:48:40,329 - xhs_crawler - INFO - 搜索关键词 '外卖翻车' (尝试 3/3)
+2026-01-15 13:48:40,329 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E5%A4%96%E5%8D%96%E7%BF%BB%E8%BD%A6
+2026-01-15 13:48:50,725 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:48:50,733 - xhs_parser - INFO - 成功解析 1 个笔记
+2026-01-15 13:48:50,738 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_外卖翻车_1768456130.html
+2026-01-15 13:48:50,809 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:48:50,818 - xhs_parser - INFO - 成功解析 1 个笔记
+2026-01-15 13:48:50,818 - xhs_crawler - INFO - 解析到 1 个笔记
+2026-01-15 13:48:50,819 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 3/3): name 'random' is not defined
+2026-01-15 13:48:50,820 - xhs_crawler - ERROR - 重试 3 次后仍然失败
+2026-01-15 13:48:50,821 - xhs_crawler - INFO - 处理关键词: 点餐翻车
+2026-01-15 13:48:50,821 - xhs_crawler - INFO - 搜索关键词 '点餐翻车' (尝试 1/3)
+2026-01-15 13:48:50,821 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E7%82%B9%E9%A4%90%E7%BF%BB%E8%BD%A6
+2026-01-15 13:49:01,563 - xhs_parser - INFO - 总共找到 50 个候选元素
+2026-01-15 13:49:01,573 - xhs_parser - INFO - 成功解析 7 个笔记
+2026-01-15 13:49:01,575 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_点餐翻车_1768456141.html
+2026-01-15 13:49:01,661 - xhs_parser - INFO - 总共找到 50 个候选元素
+2026-01-15 13:49:01,674 - xhs_parser - INFO - 成功解析 7 个笔记
+2026-01-15 13:49:01,674 - xhs_crawler - INFO - 解析到 7 个笔记
+2026-01-15 13:49:01,675 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 1/3): name 'random' is not defined
+2026-01-15 13:49:01,675 - xhs_crawler - INFO - 等待5秒后重试...
+2026-01-15 13:49:06,676 - xhs_crawler - INFO - 搜索关键词 '点餐翻车' (尝试 2/3)
+2026-01-15 13:49:06,677 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E7%82%B9%E9%A4%90%E7%BF%BB%E8%BD%A6
+2026-01-15 13:49:17,183 - xhs_parser - INFO - 总共找到 50 个候选元素
+2026-01-15 13:49:17,194 - xhs_parser - INFO - 成功解析 8 个笔记
+2026-01-15 13:49:17,197 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_点餐翻车_1768456157.html
+2026-01-15 13:49:17,264 - xhs_parser - INFO - 总共找到 50 个候选元素
+2026-01-15 13:49:17,273 - xhs_parser - INFO - 成功解析 8 个笔记
+2026-01-15 13:49:17,273 - xhs_crawler - INFO - 解析到 8 个笔记
+2026-01-15 13:49:17,273 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 2/3): name 'random' is not defined
+2026-01-15 13:49:17,274 - xhs_crawler - INFO - 等待10秒后重试...
+2026-01-15 13:49:27,274 - xhs_crawler - INFO - 搜索关键词 '点餐翻车' (尝试 3/3)
+2026-01-15 13:49:27,275 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E7%82%B9%E9%A4%90%E7%BF%BB%E8%BD%A6
+2026-01-15 13:49:37,740 - xhs_parser - INFO - 总共找到 50 个候选元素
+2026-01-15 13:49:37,751 - xhs_parser - INFO - 成功解析 8 个笔记
+2026-01-15 13:49:37,760 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_点餐翻车_1768456177.html
+2026-01-15 13:49:37,824 - xhs_parser - INFO - 总共找到 50 个候选元素
+2026-01-15 13:49:37,835 - xhs_parser - INFO - 成功解析 8 个笔记
+2026-01-15 13:49:37,836 - xhs_crawler - INFO - 解析到 8 个笔记
+2026-01-15 13:49:37,836 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 3/3): name 'random' is not defined
+2026-01-15 13:49:37,837 - xhs_crawler - ERROR - 重试 3 次后仍然失败
+2026-01-15 13:49:37,837 - xhs_crawler - INFO - 处理关键词: 外卖漫画
+2026-01-15 13:49:37,837 - xhs_crawler - INFO - 搜索关键词 '外卖漫画' (尝试 1/3)
+2026-01-15 13:49:37,837 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E5%A4%96%E5%8D%96%E6%BC%AB%E7%94%BB
+2026-01-15 13:49:48,644 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:49:48,651 - xhs_parser - INFO - 成功解析 4 个笔记
+2026-01-15 13:49:48,656 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_外卖漫画_1768456188.html
+2026-01-15 13:49:48,714 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:49:48,725 - xhs_parser - INFO - 成功解析 4 个笔记
+2026-01-15 13:49:48,725 - xhs_crawler - INFO - 解析到 4 个笔记
+2026-01-15 13:49:48,725 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 1/3): name 'random' is not defined
+2026-01-15 13:49:48,726 - xhs_crawler - INFO - 等待5秒后重试...
+2026-01-15 13:49:53,726 - xhs_crawler - INFO - 搜索关键词 '外卖漫画' (尝试 2/3)
+2026-01-15 13:49:53,727 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E5%A4%96%E5%8D%96%E6%BC%AB%E7%94%BB
+2026-01-15 13:50:04,861 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:50:04,868 - xhs_parser - INFO - 成功解析 3 个笔记
+2026-01-15 13:50:04,871 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_外卖漫画_1768456204.html
+2026-01-15 13:50:04,936 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:50:04,944 - xhs_parser - INFO - 成功解析 3 个笔记
+2026-01-15 13:50:04,944 - xhs_crawler - INFO - 解析到 3 个笔记
+2026-01-15 13:50:04,945 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 2/3): name 'random' is not defined
+2026-01-15 13:50:04,945 - xhs_crawler - INFO - 等待10秒后重试...
+2026-01-15 13:50:14,945 - xhs_crawler - INFO - 搜索关键词 '外卖漫画' (尝试 3/3)
+2026-01-15 13:50:14,946 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E5%A4%96%E5%8D%96%E6%BC%AB%E7%94%BB
+2026-01-15 13:50:25,619 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:50:25,628 - xhs_parser - INFO - 成功解析 3 个笔记
+2026-01-15 13:50:25,632 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_外卖漫画_1768456225.html
+2026-01-15 13:50:25,697 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:50:25,706 - xhs_parser - INFO - 成功解析 3 个笔记
+2026-01-15 13:50:25,707 - xhs_crawler - INFO - 解析到 3 个笔记
+2026-01-15 13:50:25,707 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 3/3): name 'random' is not defined
+2026-01-15 13:50:25,708 - xhs_crawler - ERROR - 重试 3 次后仍然失败
+2026-01-15 13:50:25,708 - xhs_crawler - INFO - 处理关键词: 点餐漫画
+2026-01-15 13:50:25,708 - xhs_crawler - INFO - 搜索关键词 '点餐漫画' (尝试 1/3)
+2026-01-15 13:50:25,708 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E7%82%B9%E9%A4%90%E6%BC%AB%E7%94%BB
+2026-01-15 13:50:36,586 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:50:36,594 - xhs_parser - INFO - 成功解析 3 个笔记
+2026-01-15 13:50:36,597 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_点餐漫画_1768456236.html
+2026-01-15 13:50:36,667 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:50:36,678 - xhs_parser - INFO - 成功解析 3 个笔记
+2026-01-15 13:50:36,679 - xhs_crawler - INFO - 解析到 3 个笔记
+2026-01-15 13:50:36,679 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 1/3): name 'random' is not defined
+2026-01-15 13:50:36,679 - xhs_crawler - INFO - 等待5秒后重试...
+2026-01-15 13:50:41,680 - xhs_crawler - INFO - 搜索关键词 '点餐漫画' (尝试 2/3)
+2026-01-15 13:50:41,680 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E7%82%B9%E9%A4%90%E6%BC%AB%E7%94%BB
+2026-01-15 13:50:52,261 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:50:52,269 - xhs_parser - INFO - 成功解析 3 个笔记
+2026-01-15 13:50:52,273 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_点餐漫画_1768456252.html
+2026-01-15 13:50:52,342 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:50:52,350 - xhs_parser - INFO - 成功解析 3 个笔记
+2026-01-15 13:50:52,351 - xhs_crawler - INFO - 解析到 3 个笔记
+2026-01-15 13:50:52,351 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 2/3): name 'random' is not defined
+2026-01-15 13:50:52,352 - xhs_crawler - INFO - 等待10秒后重试...
+2026-01-15 13:51:02,352 - xhs_crawler - INFO - 搜索关键词 '点餐漫画' (尝试 3/3)
+2026-01-15 13:51:02,353 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E7%82%B9%E9%A4%90%E6%BC%AB%E7%94%BB
+2026-01-15 13:52:16,386 - xhs_crawler - INFO - 项目初始化完成
+2026-01-15 13:52:24,811 - xhs_crawler - INFO - 开始执行简化版爬虫任务
+2026-01-15 13:52:24,812 - xhs_crawler - INFO - 开始爬取流程
+2026-01-15 13:52:30,417 - xhs_crawler - INFO - 所有组件初始化成功
+2026-01-15 13:52:30,418 - xhs_crawler - INFO - 开始登录小红书...
+2026-01-15 13:52:41,986 - xhs_crawler - INFO - ✅ 登录成功
+2026-01-15 13:52:41,987 - xhs_crawler - INFO - 搜索关键词: ['外卖翻车', '点餐翻车', '外卖漫画', '点餐漫画']
+2026-01-15 13:52:41,987 - xhs_crawler - INFO - 处理关键词: 外卖翻车
+2026-01-15 13:52:41,988 - xhs_crawler - INFO - 搜索关键词 '外卖翻车' (尝试 1/3)
+2026-01-15 13:52:41,988 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E5%A4%96%E5%8D%96%E7%BF%BB%E8%BD%A6
+2026-01-15 13:52:53,114 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:52:53,122 - xhs_parser - INFO - 成功解析 1 个笔记
+2026-01-15 13:52:53,125 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_外卖翻车_1768456373.html
+2026-01-15 13:52:53,182 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:52:53,189 - xhs_parser - INFO - 成功解析 1 个笔记
+2026-01-15 13:52:53,190 - xhs_crawler - INFO - 解析到 1 个笔记
+2026-01-15 13:52:55,609 - xhs_crawler - INFO - 处理笔记: 685b6483000000002001b66e
+2026-01-15 13:53:25,733 - xhs_crawler - INFO - 项目初始化完成
+2026-01-15 13:53:31,180 - xhs_crawler - INFO - 开始执行简化版爬虫任务
+2026-01-15 13:53:31,180 - xhs_crawler - INFO - 开始爬取流程
+2026-01-15 13:53:36,764 - xhs_crawler - INFO - 所有组件初始化成功
+2026-01-15 13:53:36,765 - xhs_crawler - INFO - 开始登录小红书...
+2026-01-15 13:53:50,003 - xhs_crawler - INFO - ✅ 登录成功
+2026-01-15 13:53:50,004 - xhs_crawler - INFO - 搜索关键词: ['外卖翻车', '点餐翻车', '外卖漫画', '点餐漫画']
+2026-01-15 13:53:50,004 - xhs_crawler - INFO - 处理关键词: 外卖翻车
+2026-01-15 13:53:50,004 - xhs_crawler - INFO - 搜索关键词 '外卖翻车' (尝试 1/3)
+2026-01-15 13:53:50,004 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E5%A4%96%E5%8D%96%E7%BF%BB%E8%BD%A6
+2026-01-15 13:54:01,455 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:54:01,466 - xhs_parser - INFO - 成功解析 1 个笔记
+2026-01-15 13:54:01,471 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_外卖翻车_1768456441.html
+2026-01-15 13:54:01,551 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:54:01,564 - xhs_parser - INFO - 成功解析 1 个笔记
+2026-01-15 13:54:01,564 - xhs_crawler - INFO - 解析到 1 个笔记
+2026-01-15 13:54:01,564 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 1/3): name 'random' is not defined
+2026-01-15 13:54:01,565 - xhs_crawler - INFO - 等待5秒后重试...
+2026-01-15 13:54:06,566 - xhs_crawler - INFO - 搜索关键词 '外卖翻车' (尝试 2/3)
+2026-01-15 13:54:06,566 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E5%A4%96%E5%8D%96%E7%BF%BB%E8%BD%A6
+2026-01-15 13:54:17,529 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:54:17,539 - xhs_parser - INFO - 成功解析 1 个笔记
+2026-01-15 13:54:17,545 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_外卖翻车_1768456457.html
+2026-01-15 13:54:17,635 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:54:17,648 - xhs_parser - INFO - 成功解析 1 个笔记
+2026-01-15 13:54:17,648 - xhs_crawler - INFO - 解析到 1 个笔记
+2026-01-15 13:54:17,649 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 2/3): name 'random' is not defined
+2026-01-15 13:54:17,649 - xhs_crawler - INFO - 等待10秒后重试...
+2026-01-15 13:54:27,650 - xhs_crawler - INFO - 搜索关键词 '外卖翻车' (尝试 3/3)
+2026-01-15 13:54:27,650 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E5%A4%96%E5%8D%96%E7%BF%BB%E8%BD%A6
+2026-01-15 13:54:38,619 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:54:38,630 - xhs_parser - INFO - 成功解析 1 个笔记
+2026-01-15 13:54:38,632 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_外卖翻车_1768456478.html
+2026-01-15 13:54:38,703 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:54:38,713 - xhs_parser - INFO - 成功解析 1 个笔记
+2026-01-15 13:54:38,714 - xhs_crawler - INFO - 解析到 1 个笔记
+2026-01-15 13:54:38,714 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 3/3): name 'random' is not defined
+2026-01-15 13:54:38,714 - xhs_crawler - ERROR - 重试 3 次后仍然失败
+2026-01-15 13:54:38,714 - xhs_crawler - INFO - 处理关键词: 点餐翻车
+2026-01-15 13:54:38,715 - xhs_crawler - INFO - 搜索关键词 '点餐翻车' (尝试 1/3)
+2026-01-15 13:54:38,715 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E7%82%B9%E9%A4%90%E7%BF%BB%E8%BD%A6
+2026-01-15 13:54:50,227 - xhs_parser - INFO - 总共找到 50 个候选元素
+2026-01-15 13:54:50,238 - xhs_parser - INFO - 成功解析 7 个笔记
+2026-01-15 13:54:50,242 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_点餐翻车_1768456490.html
+2026-01-15 13:54:50,327 - xhs_parser - INFO - 总共找到 50 个候选元素
+2026-01-15 13:54:50,341 - xhs_parser - INFO - 成功解析 7 个笔记
+2026-01-15 13:54:50,341 - xhs_crawler - INFO - 解析到 7 个笔记
+2026-01-15 13:54:50,342 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 1/3): name 'random' is not defined
+2026-01-15 13:54:50,342 - xhs_crawler - INFO - 等待5秒后重试...
+2026-01-15 13:54:55,343 - xhs_crawler - INFO - 搜索关键词 '点餐翻车' (尝试 2/3)
+2026-01-15 13:54:55,343 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E7%82%B9%E9%A4%90%E7%BF%BB%E8%BD%A6
+2026-01-15 13:55:06,487 - xhs_parser - INFO - 总共找到 50 个候选元素
+2026-01-15 13:55:06,499 - xhs_parser - INFO - 成功解析 7 个笔记
+2026-01-15 13:55:06,504 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_点餐翻车_1768456506.html
+2026-01-15 13:55:06,565 - xhs_parser - INFO - 总共找到 50 个候选元素
+2026-01-15 13:55:06,577 - xhs_parser - INFO - 成功解析 7 个笔记
+2026-01-15 13:55:06,577 - xhs_crawler - INFO - 解析到 7 个笔记
+2026-01-15 13:55:06,577 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 2/3): name 'random' is not defined
+2026-01-15 13:55:06,578 - xhs_crawler - INFO - 等待10秒后重试...
+2026-01-15 13:55:16,578 - xhs_crawler - INFO - 搜索关键词 '点餐翻车' (尝试 3/3)
+2026-01-15 13:55:16,579 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E7%82%B9%E9%A4%90%E7%BF%BB%E8%BD%A6
+2026-01-15 13:55:27,269 - xhs_parser - INFO - 总共找到 50 个候选元素
+2026-01-15 13:55:27,279 - xhs_parser - INFO - 成功解析 8 个笔记
+2026-01-15 13:55:27,283 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_点餐翻车_1768456527.html
+2026-01-15 13:55:27,357 - xhs_parser - INFO - 总共找到 50 个候选元素
+2026-01-15 13:55:27,368 - xhs_parser - INFO - 成功解析 8 个笔记
+2026-01-15 13:55:27,369 - xhs_crawler - INFO - 解析到 8 个笔记
+2026-01-15 13:55:27,369 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 3/3): name 'random' is not defined
+2026-01-15 13:55:27,370 - xhs_crawler - ERROR - 重试 3 次后仍然失败
+2026-01-15 13:55:27,370 - xhs_crawler - INFO - 处理关键词: 外卖漫画
+2026-01-15 13:55:27,370 - xhs_crawler - INFO - 搜索关键词 '外卖漫画' (尝试 1/3)
+2026-01-15 13:55:27,371 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E5%A4%96%E5%8D%96%E6%BC%AB%E7%94%BB
+2026-01-15 13:55:38,461 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:55:38,469 - xhs_parser - INFO - 成功解析 3 个笔记
+2026-01-15 13:55:38,471 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_外卖漫画_1768456538.html
+2026-01-15 13:55:38,538 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:55:38,547 - xhs_parser - INFO - 成功解析 3 个笔记
+2026-01-15 13:55:38,547 - xhs_crawler - INFO - 解析到 3 个笔记
+2026-01-15 13:55:38,547 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 1/3): name 'random' is not defined
+2026-01-15 13:55:38,548 - xhs_crawler - INFO - 等待5秒后重试...
+2026-01-15 13:55:43,549 - xhs_crawler - INFO - 搜索关键词 '外卖漫画' (尝试 2/3)
+2026-01-15 13:55:43,549 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E5%A4%96%E5%8D%96%E6%BC%AB%E7%94%BB
+2026-01-15 13:55:54,448 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:55:54,458 - xhs_parser - INFO - 成功解析 3 个笔记
+2026-01-15 13:55:54,461 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_外卖漫画_1768456554.html
+2026-01-15 13:55:54,536 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:55:54,546 - xhs_parser - INFO - 成功解析 3 个笔记
+2026-01-15 13:55:54,547 - xhs_crawler - INFO - 解析到 3 个笔记
+2026-01-15 13:55:54,547 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 2/3): name 'random' is not defined
+2026-01-15 13:55:54,547 - xhs_crawler - INFO - 等待10秒后重试...
+2026-01-15 13:56:04,547 - xhs_crawler - INFO - 搜索关键词 '外卖漫画' (尝试 3/3)
+2026-01-15 13:56:04,548 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E5%A4%96%E5%8D%96%E6%BC%AB%E7%94%BB
+2026-01-15 13:56:16,047 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:56:16,058 - xhs_parser - INFO - 成功解析 3 个笔记
+2026-01-15 13:56:16,062 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_外卖漫画_1768456576.html
+2026-01-15 13:56:16,140 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:56:16,150 - xhs_parser - INFO - 成功解析 3 个笔记
+2026-01-15 13:56:16,151 - xhs_crawler - INFO - 解析到 3 个笔记
+2026-01-15 13:56:16,151 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 3/3): name 'random' is not defined
+2026-01-15 13:56:16,151 - xhs_crawler - ERROR - 重试 3 次后仍然失败
+2026-01-15 13:56:16,152 - xhs_crawler - INFO - 处理关键词: 点餐漫画
+2026-01-15 13:56:16,152 - xhs_crawler - INFO - 搜索关键词 '点餐漫画' (尝试 1/3)
+2026-01-15 13:56:16,153 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E7%82%B9%E9%A4%90%E6%BC%AB%E7%94%BB
+2026-01-15 13:56:27,141 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:56:27,149 - xhs_parser - INFO - 成功解析 3 个笔记
+2026-01-15 13:56:27,153 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_点餐漫画_1768456587.html
+2026-01-15 13:56:27,213 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:56:27,220 - xhs_parser - INFO - 成功解析 3 个笔记
+2026-01-15 13:56:27,221 - xhs_crawler - INFO - 解析到 3 个笔记
+2026-01-15 13:56:27,221 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 1/3): name 'random' is not defined
+2026-01-15 13:56:27,221 - xhs_crawler - INFO - 等待5秒后重试...
+2026-01-15 13:56:32,222 - xhs_crawler - INFO - 搜索关键词 '点餐漫画' (尝试 2/3)
+2026-01-15 13:56:32,222 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E7%82%B9%E9%A4%90%E6%BC%AB%E7%94%BB
+2026-01-15 13:56:43,188 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:56:43,199 - xhs_parser - INFO - 成功解析 3 个笔记
+2026-01-15 13:56:43,203 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_点餐漫画_1768456603.html
+2026-01-15 13:56:43,280 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:56:43,290 - xhs_parser - INFO - 成功解析 3 个笔记
+2026-01-15 13:56:43,291 - xhs_crawler - INFO - 解析到 3 个笔记
+2026-01-15 13:56:43,291 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 2/3): name 'random' is not defined
+2026-01-15 13:56:43,291 - xhs_crawler - INFO - 等待10秒后重试...
+2026-01-15 13:56:53,292 - xhs_crawler - INFO - 搜索关键词 '点餐漫画' (尝试 3/3)
+2026-01-15 13:56:53,292 - xhs_crawler - INFO - 访问搜索页面: https://www.xiaohongshu.com/search_result?keyword=%E7%82%B9%E9%A4%90%E6%BC%AB%E7%94%BB
+2026-01-15 13:57:04,192 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:57:04,200 - xhs_parser - INFO - 成功解析 3 个笔记
+2026-01-15 13:57:04,205 - xhs_crawler - INFO - 页面源码已保存到: debug_pages\search_点餐漫画_1768456624.html
+2026-01-15 13:57:04,279 - xhs_parser - INFO - 总共找到 69 个候选元素
+2026-01-15 13:57:04,290 - xhs_parser - INFO - 成功解析 3 个笔记
+2026-01-15 13:57:04,290 - xhs_crawler - INFO - 解析到 3 个笔记
+2026-01-15 13:57:04,291 - xhs_crawler - ERROR - 搜索爬取失败 (尝试 3/3): name 'random' is not defined
+2026-01-15 13:57:04,291 - xhs_crawler - ERROR - 重试 3 次后仍然失败
+2026-01-15 13:57:04,291 - xhs_crawler - INFO - 爬取完成，共收集 0 个连环画
+2026-01-15 13:57:06,660 - request_handler - INFO - 请求处理器已关闭
+2026-01-15 13:57:06,660 - xhs_crawler - INFO - 爬虫已关闭
+2026-01-15 13:57:06,661 - xhs_crawler - INFO - 报告已保存到: D:\1- VS file menu\xiaohongshu\data\processed\comics\crawl_report.json
+2026-01-15 13:57:27,076 - request_handler - INFO - 请求处理器已关闭
+2026-01-15 13:57:27,076 - xhs_crawler - INFO - 爬虫已关闭
+2026-01-15 13:57:27,077 - xhs_crawler - INFO - 爬虫任务完成，收集到 0 个连环画

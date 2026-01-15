@@ -21,48 +21,61 @@ def test_selenium_basic():
     # 初始化日志
     logger = setup_logger("test_selenium", log_level="DEBUG")
     
-    # 创建Selenium处理器（显示浏览器界面，方便调试）
+    # 创建Selenium处理器
     handler = SeleniumHandler(headless=False)
     
     try:
-        # 测试访问页面
-        print("1. 测试页面访问...")
-        url = "https://www.baidu.com"
-        source = handler.get_page_source(url)
+        # 初始化浏览器
+        print("0. 初始化浏览器...")
+        if not handler.initialize():
+            print("✗ 浏览器初始化失败")
+            return
         
-        if source:
+        # 登录小红书（使用cookies）
+        print("1. 测试登录小红书...")
+        if not handler.login_with_cookies():
+            print("⚠️ 登录失败或未完全登录，继续测试...")
+        
+        # 测试访问页面
+        print("\n2. 测试页面访问...")
+        url = "https://www.baidu.com"
+        
+        # 使用增强的get_page方法
+        if handler.get_page(url):
             print(f"✓ 页面访问成功: {url}")
             print(f"  页面标题: {handler.driver.title}")
         else:
             print(f"✗ 页面访问失败: {url}")
+            return
         
         # 测试滚动
-        print("\n2. 测试页面滚动...")
+        print("\n3. 测试页面滚动...")
         handler.scroll_down(500, 1)
         print("✓ 页面滚动成功")
         
         # 测试提取图片
-        print("\n3. 测试提取图片URL...")
+        print("\n4. 测试提取图片URL...")
         image_urls = handler.extract_image_urls()
         print(f"✓ 提取到 {len(image_urls)} 张图片")
         
         if image_urls:
             print(f"  示例图片URL: {image_urls[0][:50]}...")
         
-        # 测试小红书搜索（简单测试）
-        print("\n4. 测试小红书搜索（简单测试）...")
+        # 测试小红书搜索
+        print("\n5. 测试小红书搜索...")
         try:
-            # 先访问小红书主页
-            handler.driver.get("https://www.xiaohongshu.com")
-            print("✓ 小红书主页访问成功")
-            
-            # 获取页面标题
-            print(f"  页面标题: {handler.driver.title}")
-            
-            # 保存截图
-            handler.driver.save_screenshot("test_xiaohongshu.png")
-            print("✓ 截图保存成功: test_xiaohongshu.png")
-            
+            # 使用增强的get_page方法访问小红书
+            xhs_url = "https://www.xiaohongshu.com"
+            if handler.get_page(xhs_url):
+                print("✓ 小红书主页访问成功")
+                print(f"  页面标题: {handler.driver.title}")
+                
+                # 保存截图
+                handler.driver.save_screenshot("test_xiaohongshu.png")
+                print("✓ 截图保存成功: test_xiaohongshu.png")
+            else:
+                print("✗ 小红书主页访问失败")
+                
         except Exception as e:
             print(f"✗ 小红书测试失败: {str(e)}")
         
@@ -95,3 +108,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    

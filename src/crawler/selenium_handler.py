@@ -606,7 +606,30 @@ class SeleniumHandler:
         except Exception as e:
             logger.debug(f"人类行为模拟失败: {e}")
 
+    def scroll_down(self, pixels=500, duration=1):
+        """
+        滚动页面
+        
+        Args:
+            pixels: 滚动的像素数
+            duration: 滚动持续时间（秒）
+        """
+        try:
+            # 使用JavaScript滚动页面
+            self.driver.execute_script(f"window.scrollBy(0, {pixels});")
+            time.sleep(duration)
+            logger.info(f"页面滚动 {pixels} 像素")
+        except Exception as e:
+            logger.error(f"滚动页面失败: {e}")
 
+    def extract_image_urls(self):
+        """
+        提取页面中的图片URL
+        
+        Returns:
+            图片URL列表
+        """
+        return self.extract_images()
     
     def close(self):
         """关闭浏览器"""
